@@ -147,7 +147,6 @@ var import_express = __toESM(require("express"), 1);
 var import_cors = __toESM(require("cors"), 1);
 var import_path = __toESM(require("path"), 1);
 var import_vite = require("vite");
-var import_firestore = require("firebase/firestore");
 var import_genai = require("@google/genai");
 async function startServer() {
   const app = (0, import_express.default)();
@@ -159,52 +158,69 @@ async function startServer() {
   app.post("/api/ai/narrator", async (req, res) => {
     try {
       const { channelId, prompt, context } = req.body;
-      const apiKey = process.env.GEMINI_API_KEY2;
-      if (!apiKey) {
-        return res.status(500).json({ error: "GEMINI_API_KEY2 n\xE3o configurada." });
+      const apiKeys = [process.env.GEMINI_API_KEY2, process.env.GEMINI_API_KEY].filter(Boolean);
+      if (apiKeys.length === 0) {
+        return res.status(500).json({ error: "Nenhuma chave GEMINI_API_KEY ou GEMINI_API_KEY2 configurada." });
       }
       const { NARRATOR_SYSTEM_PROMPT: NARRATOR_SYSTEM_PROMPT2 } = await Promise.resolve().then(() => (init_narratorPrompt(), narratorPrompt_exports));
       const { parseNarratorResponse: parseNarratorResponse2 } = await Promise.resolve().then(() => (init_narratorLogic(), narratorLogic_exports));
-      const ai = new import_genai.GoogleGenAI({
-        apiKey,
-        httpOptions: {
-          headers: {
-            "User-Agent": "aistudio-build"
-          }
-        }
-      });
       const history = [
         { role: "user", parts: [{ text: NARRATOR_SYSTEM_PROMPT2 }] },
-        { role: "model", parts: [{ text: "Entendido. Serei o Mestre de Jogo e Narrador t\xE1tico. Responder-ei sempre em JSON." }] },
+        { role: "model", parts: [{ text: JSON.stringify({
+          narrativa: "Entendido. Sou o Mestre de Jogo e Narrador T\xE1tico de Telumak RPG. Conduzirei as a\xE7\xF5es com prosa visceral e c\xE1lculos t\xE1ticos, respondendo sempre em JSON estruturado.",
+          dados_tecnicos: { rolagens: [], status_atualizados: {}, solicitacao_rolagem: null }
+        }) }] },
         ...(context || []).map((m) => ({
-          role: m.authorName === "Narrador" ? "model" : "user",
-          parts: [{ text: m.content }]
+          role: m.authorName && (m.authorName.includes("Narrador") || m.authorName.includes("IA")) ? "model" : "user",
+          parts: [{ text: typeof m.content === "string" ? m.content : JSON.stringify(m.content) }]
         }))
       ];
-      const result = await ai.models.generateContent({
-        model: "gemini-1.5-flash",
-        contents: [...history, { role: "user", parts: [{ text: prompt }] }],
-        config: {
-          responseMimeType: "application/json"
+      const cleanPrompt = typeof prompt === "string" ? prompt : prompt?.text || "Prossiga a narrativa com base no contexto anterior.";
+      let lastError = null;
+      let responseText = "";
+      const modelsToTry = ["gemini-2.5-flash", "gemini-3.8-flash"];
+      keyLoop: for (const apiKey of apiKeys) {
+        const ai = new import_genai.GoogleGenAI({
+          apiKey,
+          httpOptions: {
+            headers: {
+              "User-Agent": "aistudio-build"
+            }
+          }
+        });
+        for (const model of modelsToTry) {
+          try {
+            const result = await ai.models.generateContent({
+              model,
+              contents: [...history, { role: "user", parts: [{ text: cleanPrompt }] }],
+              config: {
+                responseMimeType: "application/json"
+              }
+            });
+            responseText = result.text || "{}";
+            if (responseText) {
+              lastError = null;
+              break keyLoop;
+            }
+          } catch (err) {
+            console.warn(`[Narrador AI] Falha com chave ${apiKey.substring(0, 8)}... no modelo ${model}:`, err?.message);
+            lastError = err;
+          }
         }
-      });
-      const responseText = result.text || "{}";
+      }
+      if (!responseText && lastError) {
+        throw new Error(`Falha ao gerar resposta da IA: ${lastError.message}`);
+      }
       const narratorData = parseNarratorResponse2(responseText);
-      const db = (0, import_firestore.getFirestore)();
-      await (0, import_firestore.addDoc)((0, import_firestore.collection)(db, "discord_notebook_messages"), {
-        channelId,
-        content: narratorData.narrativa,
-        authorName: "Narrador",
-        authorEmail: "narrador-ia@telumak.rpg",
-        createdAt: (0, import_firestore.serverTimestamp)(),
-        type: "ai-generated",
-        technicalData: narratorData.dados_tecnicos
-        // Salvando dados técnicos separadamente para consumo do React
+      return res.json({
+        success: true,
+        narrativa: narratorData.narrativa,
+        dados_tecnicos: narratorData.dados_tecnicos,
+        channelId
       });
-      res.json({ success: true, ...narratorData });
     } catch (err) {
       console.error("Erro na API do Narrador:", err);
-      res.status(500).json({ error: err.message });
+      res.status(500).json({ error: err.message || "Erro desconhecido ao processar com IA." });
     }
   });
   app.get("/api/proxy-image", async (req, res) => {
