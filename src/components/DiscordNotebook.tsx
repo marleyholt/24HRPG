@@ -1354,7 +1354,12 @@ export function DiscordNotebook({
       // DISPARO AUTOMÁTICO DO NARRADOR IA
       const isNarrativeChannel = activeChannel?.id === '1-narrativas' || (activeChannel?.name && activeChannel.name.toLowerCase().includes('narrativas'));
       if (isNarrativeChannel) {
-        askNarratorAi(finalContent, messages.slice(-10));
+        const sanitizedContext = messages.slice(-10).map(m => ({
+          authorName: m.authorName,
+          content: m.content,
+          createdAt: m.createdAt
+        }));
+        askNarratorAi(finalContent, sanitizedContext);
       }
 
       logEvent('success', `Mensagem gravada no Firestore com sucesso!`, {

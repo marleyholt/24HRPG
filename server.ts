@@ -81,7 +81,7 @@ async function startServer() {
       ];
 
       const result = await ai.models.generateContent({
-        model: "gemini-3.8-flash",
+        model: "gemini-1.5-flash",
         contents: [...history, { role: "user", parts: [{ text: prompt }] }],
         config: {
           responseMimeType: "application/json",
@@ -251,16 +251,16 @@ Observações importantes:
       let response: any;
       try {
         response = await ai.models.generateContent({
-          model: "gemini-3.8-flash",
+          model: "gemini-1.5-flash",
           contents: contentsParts,
           config: {
             responseMimeType: "application/json",
           }
         });
       } catch (geminiErr: any) {
-        console.warn("Tentando fallback para gemini-3.8-flash devido a:", geminiErr?.message);
+        console.warn("Tentando fallback para gemini-1.5-flash devido a:", geminiErr?.message);
         response = await ai.models.generateContent({
-          model: "gemini-3.8-flash",
+          model: "gemini-1.5-flash",
           contents: contentsParts,
           config: {
             responseMimeType: "application/json",
