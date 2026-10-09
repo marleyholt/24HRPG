@@ -64,6 +64,36 @@ FORMATO DE SA\xCDDA (Obrigat\xF3rio em JSON):
 
 PADR\xD5ES DE RESPOSTA E FORMATO:
 
+0. PADR\xD5ES:
+- Na primeira intera\xE7\xE3o do jogador, solicitar uma breve descri\xE7\xE3o do seu personagem, definindo alinhamento e palavras chave para defini-lo, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar lista de defeitos e virtudes o objetivo \xE9 criar um background de roleplay para o personagem com um alinhamento de a\xE7\xF5es:
+- Todos os NPCs criados por voc\xEA, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar
+
+Letra	Virtudes (Qualidades)	Defeitos
+A	Altru\xEDsta, Am\xE1vel, Atencioso, Aut\xEAntico	Arrogante, Ap\xE1tico, Avarento, Antip\xE1tico
+B	Benevolente, Bondoso, Bem-humorado	Belicoso (briguento), Banal, Biromba
+C	Corajoso, Companheiro, Cordial, Compreensivo	Cruel, C\xEDnico, Ciumento, Covarde
+D	Dedicado, Determinado, Discreto, D\xF3cil	Desonesto, Desorganizado, Desleal, Desleixado
+E	Emp\xE1tico, Esfor\xE7ado, Elegante, Eficiente	Ego\xEDsta, Egoc\xEAntrico, Invejoso, Estourado
+F	Fiel, Franco, Flex\xEDvel, Fraterno	Falso, Fofoqueiro, Fr\xEDvolo, Fraco
+G	Generoso, Gentil, Grato, Genu\xEDno	Gancioso, Grosseiro, Guloso, Ganza
+H	Honesto, Humilde, Honrado, Hospitaleiro	Hip\xF3crita, Hostil, Hipercr\xEDtico
+I	\xCDntegro, Inteligente, Inovador, Inspirador	Impaciente, Invejoso, Irrespons\xE1vel, Imaturo
+J	Justo, Jovial, Juicioso	Julgador, Justiceiro (vingativo), Jactancioso
+L	Leal, Liberal, L\xFAcido, Laborioso	Leviano, Lento, Limitado, Luxurioso
+M	Maduro, Modesto, Misericordioso, Motivado	Manipulador, Maledicente, Mesquinho, Mentiroso
+N	Nobre, Natural, Neutro, Zeloso	Negligente, Narcisista, Nervoso, Negativista
+O	Otimista, Organizado, Observador, Ousado	Orgulhoso, Omissor, Obstinado, Opressor
+P	Paciente, Persistente, Prudente, Prestativo	Procrastinador, Posesivo, Preconceituoso, Pessimista
+Q	Querido, Questionador (construtivo)	Queixoso, Quixotesco (irrealista)
+R	Resiliente, Respeitoso, Respons\xE1vel, Racional	Rancoroso, R\xEDgido, Rebelde (destrutivo), Ranzinza
+S	Sincero, Solid\xE1rio, S\xE1bio, Simp\xE1tico	Sarc\xE1stico, Soberbo, S\xEDnico, Superficial
+T	Tolerante, Trabalhador, Transparente	Teimoso, T\xEDmido (em excesso), Traidor, Tacanho
+U	Urgente (proativo), \xDAnico, Unificador	Umbral, Utilitarista (interesseiro)
+V	Valente, Verdadeiro, Vers\xE1til, Vigilante	Vaidoso, Vingativo, Vol\xFAvel, Vulgar
+X	Xen\xF3filo (atra\xE7\xE3o pelo novo)	Xen\xF3fobo
+Z	Zeloso, Zelador	Zombeteiro, Turvo (sem clareza)
+
+
 1. Estilo Narrativo:
 - Prosa densa, imersiva e de tom \xE9pico/sombrio.
 - Valorize descri\xE7\xF5es sensoriais precisas: o atrito do metal, o rastro de sangue, a topografia do terreno, o estresse t\xE1tico e a psicologia pragm\xE1tica dos l\xEDderes.
@@ -135,8 +165,14 @@ async function startServer() {
       }
       const { NARRATOR_SYSTEM_PROMPT: NARRATOR_SYSTEM_PROMPT2 } = await Promise.resolve().then(() => (init_narratorPrompt(), narratorPrompt_exports));
       const { parseNarratorResponse: parseNarratorResponse2 } = await Promise.resolve().then(() => (init_narratorLogic(), narratorLogic_exports));
-      const ai = new import_genai.GoogleGenAI({ apiKey });
-      const model = ai.models.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const ai = new import_genai.GoogleGenAI({
+        apiKey,
+        httpOptions: {
+          headers: {
+            "User-Agent": "aistudio-build"
+          }
+        }
+      });
       const history = [
         { role: "user", parts: [{ text: NARRATOR_SYSTEM_PROMPT2 }] },
         { role: "model", parts: [{ text: "Entendido. Serei o Mestre de Jogo e Narrador t\xE1tico. Responder-ei sempre em JSON." }] },
@@ -145,7 +181,8 @@ async function startServer() {
           parts: [{ text: m.content }]
         }))
       ];
-      const result = await model.generateContent({
+      const result = await ai.models.generateContent({
+        model: "gemini-3.8-flash",
         contents: [...history, { role: "user", parts: [{ text: prompt }] }],
         config: {
           responseMimeType: "application/json"
@@ -297,16 +334,16 @@ ${textContent}`
       let response;
       try {
         response = await ai.models.generateContent({
-          model: "gemini-2.5-pro",
+          model: "gemini-3.8-flash",
           contents: contentsParts,
           config: {
             responseMimeType: "application/json"
           }
         });
       } catch (geminiErr) {
-        console.warn("Tentando fallback para gemini-3.7-flash devido a:", geminiErr?.message);
+        console.warn("Tentando fallback para gemini-3.8-flash devido a:", geminiErr?.message);
         response = await ai.models.generateContent({
-          model: "gemini-2.5-flash",
+          model: "gemini-3.8-flash",
           contents: contentsParts,
           config: {
             responseMimeType: "application/json"
