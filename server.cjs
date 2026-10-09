@@ -136,7 +136,7 @@ async function startServer() {
       const { NARRATOR_SYSTEM_PROMPT: NARRATOR_SYSTEM_PROMPT2 } = await Promise.resolve().then(() => (init_narratorPrompt(), narratorPrompt_exports));
       const { parseNarratorResponse: parseNarratorResponse2 } = await Promise.resolve().then(() => (init_narratorLogic(), narratorLogic_exports));
       const ai = new import_genai.GoogleGenAI({ apiKey });
-      const model = ai.models.getGenerativeModel({ model: "gemini-2.5-flash" });
+      const model = ai.models.getGenerativeModel({ model: "gemini-1.5-flash" });
       const history = [
         { role: "user", parts: [{ text: NARRATOR_SYSTEM_PROMPT2 }] },
         { role: "model", parts: [{ text: "Entendido. Serei o Mestre de Jogo e Narrador t\xE1tico. Responder-ei sempre em JSON." }] },
