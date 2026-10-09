@@ -850,6 +850,15 @@ export function DiscordNotebook({
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Garante scroll até o indicador quando a IA estiver pensando
+  useEffect(() => {
+    if (isAskingAi) {
+      setTimeout(() => {
+        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 60);
+    }
+  }, [isAskingAi]);
+
   // Filter messages based on search query, pinned toggle and strict deduplication
   const filteredMessages = useMemo(() => {
     const seenDiscordIds = new Set<string>();
@@ -1133,25 +1142,119 @@ export function DiscordNotebook({
   };
 
   // Funções do Narrador IA
-  const askNarratorAi = async (prompt: string, context: any[]) => {
+  const askNarratorAi = async (promptText?: string, customContext?: any[]) => {
+    if (isAskingAi) return;
+
+    // Garante que o prompt seja uma string válida, evitando eventos sintéticos de clique
+    const safePrompt = typeof promptText === 'string' && promptText.trim().length > 0
+      ? promptText.trim()
+      : (inputText.trim() || (filteredMessages.length > 0 ? filteredMessages[filteredMessages.length - 1]?.content : 'Inicie a cena descrevendo os desafios imediatos dos personagens.'));
+
+    const contextMessages = customContext || messages.slice(-10).map(m => ({
+      authorName: m.authorName || 'Jogador',
+      content: typeof m.content === 'string' ? m.content : ''
+    }));
+
     setIsAskingAi(true);
     try {
       const response = await fetch(getApiUrl('/api/ai/narrator'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          channelId: activeChannel?.id,
-          prompt,
-          context
+          channelId: activeChannel?.id || '1-narrativa',
+          prompt: safePrompt,
+          context: contextMessages
         })
       });
-      const data = await response.json();
-      if (!data.success) {
-        throw new Error(data.error);
+
+      if (!response.ok) {
+        const errJson = await response.json().catch(() => ({}));
+        throw new Error(errJson.error || `Erro HTTP ${response.status}`);
       }
+
+      const data = await response.json();
+      if (!data.success || !data.narrativa) {
+        throw new Error(data.error || 'Resposta inválida recebida da IA.');
+      }
+
+      // 1. Gravar a Narrativa no canal 1-narrativa (ou canal ativo de narração)
+      const narrativeChannelId = activeChannel?.id || '1-narrativa';
+      const narrativeChannelName = activeChannel?.name || '1 Narrativa';
+      await addDoc(collection(db, 'discord_notebook_messages'), {
+        channelId: narrativeChannelId,
+        discordTargetId: null,
+        channelName: narrativeChannelName,
+        authorName: 'Narrador (IA)',
+        authorAvatar: 'https://cdn-icons-png.flaticon.com/512/3408/3408591.png',
+        authorEmail: 'narrador-ia@telumak.rpg',
+        content: data.narrativa,
+        isFromDiscord: false,
+        discordSynced: false,
+        syncingToDiscord: false,
+        pinned: false,
+        type: 'ai-narrative',
+        technicalData: data.dados_tecnicos || null,
+        createdAt: serverTimestamp()
+      });
+      trackWrite('discord_notebook_messages', 1);
+
+      // 2. Se houver rolagens mecânicas dos NPCs/oposição, gravar no canal 2-rolagens
+      const rollChannel = visibleChannels.find(c => c.id === '2-rolagens' || (c.name && c.name.toLowerCase().includes('rolagens')));
+      const rollChannelId = rollChannel?.id || '2-rolagens';
+      const rollChannelName = rollChannel?.name || '2 Rolagens';
+
+      if (data.dados_tecnicos?.rolagens && Array.isArray(data.dados_tecnicos.rolagens) && data.dados_tecnicos.rolagens.length > 0) {
+        const rolagensText = data.dados_tecnicos.rolagens.map((r: any) => 
+          `🎲 **${r.descricao || 'Teste Mecânico'}**\n> 🎯 Resultado: **${r.resultado}** | Valor numérico: \`${r.valor}\``
+        ).join('\n\n');
+
+        await addDoc(collection(db, 'discord_notebook_messages'), {
+          channelId: rollChannelId,
+          discordTargetId: null,
+          channelName: rollChannelName,
+          authorName: 'Narrador (Rolagens Oposição)',
+          authorAvatar: 'https://cdn-icons-png.flaticon.com/512/3408/3408591.png',
+          authorEmail: 'narrador-ia@telumak.rpg',
+          content: `⚔️ **Rolagens Mecânicas do Narrador / Oposição:**\n\n${rolagensText}`,
+          isFromDiscord: false,
+          discordSynced: false,
+          syncingToDiscord: false,
+          pinned: false,
+          type: 'ai-roll',
+          createdAt: serverTimestamp()
+        });
+        trackWrite('discord_notebook_messages', 1);
+      }
+
+      // 3. Se houver solicitação de rolagem para os jogadores, publicar destaque no canal 2-rolagens
+      if (data.dados_tecnicos?.solicitacao_rolagem && typeof data.dados_tecnicos.solicitacao_rolagem === 'string') {
+        await addDoc(collection(db, 'discord_notebook_messages'), {
+          channelId: rollChannelId,
+          discordTargetId: null,
+          channelName: rollChannelName,
+          authorName: 'Narrador (Solicitação de Teste)',
+          authorAvatar: 'https://cdn-icons-png.flaticon.com/512/3408/3408591.png',
+          authorEmail: 'narrador-ia@telumak.rpg',
+          content: `📢 **Solicitação de Teste para o Jogador:**\n\n> ⚠️ **${data.dados_tecnicos.solicitacao_rolagem}**\n\n*(Realize sua rolagem neste canal utilizando fórmulas como \`4+2d10!9\` ou \`1d20+5\`)*`,
+          isFromDiscord: false,
+          discordSynced: false,
+          syncingToDiscord: false,
+          pinned: false,
+          type: 'ai-request-roll',
+          createdAt: serverTimestamp()
+        });
+        trackWrite('discord_notebook_messages', 1);
+      }
+
+      logEvent('success', 'Narrador IA respondeu e publicou no chat!', {
+        canal: narrativeChannelName,
+        trecho: data.narrativa.substring(0, 60)
+      });
+      if (onAddLog) onAddLog('success', 'O Narrador (IA) publicou a continuação da história!');
     } catch (err: any) {
-      console.error(err);
-      onAddLog?.('error', 'Erro ao consultar Narrador IA: ' + err.message);
+      console.error("Erro ao chamar Narrador IA:", err);
+      logEvent('error', 'Falha no Narrador IA', { erro: err.message });
+      if (onAddLog) onAddLog('error', 'Erro do Narrador IA: ' + err.message);
     } finally {
       setIsAskingAi(false);
     }
@@ -1352,12 +1455,18 @@ export function DiscordNotebook({
       const docRef = await addDoc(collection(db, 'discord_notebook_messages'), messagePayload);
       trackWrite('discord_notebook_messages', 1);
       // DISPARO AUTOMÁTICO DO NARRADOR IA
-      const isNarrativeChannel = activeChannel?.id === '1-narrativas' || (activeChannel?.name && activeChannel.name.toLowerCase().includes('narrativas'));
+      const isNarrativeChannel = 
+        activeChannel?.id === '1-narrativa' || 
+        activeChannel?.category === 'NARRAÇÃO' ||
+        (activeChannel?.name && activeChannel.name.toLowerCase().includes('narrativa'));
+
       if (isNarrativeChannel) {
-        const sanitizedContext = messages.slice(-10).map(m => ({
-          authorName: m.authorName,
-          content: m.content,
-          createdAt: m.createdAt
+        const sanitizedContext = [...messages.slice(-10), {
+          authorName: senderName,
+          content: finalContent
+        }].map(m => ({
+          authorName: m.authorName || 'Jogador',
+          content: typeof m.content === 'string' ? m.content : ''
         }));
         askNarratorAi(finalContent, sanitizedContext);
       }
@@ -2567,11 +2676,6 @@ export function DiscordNotebook({
                 </div>
               )}
 
-              {isAskingAi && (
-                <div className="text-sm text-gray-500 italic p-2 animate-pulse">
-                  O narrador está elaborando a próxima narrativa...
-                </div>
-              )}
               {filteredMessages.map((msg, idx) => {
                 const isBot = msg.authorName.includes('[Discord]') || msg.authorName.includes('BOT') || msg.isFromDiscord;
                 const authorUser = allUsers?.find(u => u.email && msg.authorEmail && u.email.toLowerCase().trim() === msg.authorEmail.toLowerCase().trim());
@@ -2826,6 +2930,26 @@ export function DiscordNotebook({
                 </React.Fragment>
                 );
               })}
+
+              {/* Status animado do Narrador IA no final do chat */}
+              {isAskingAi && (
+                <div className="flex items-start gap-3 p-3.5 mx-4 my-3 bg-gradient-to-r from-indigo-950/70 via-purple-950/50 to-indigo-950/70 border border-indigo-500/40 rounded-xl shadow-xl animate-pulse text-indigo-200">
+                  <div className="w-8 h-8 rounded-full bg-indigo-600/30 border border-indigo-500/60 flex items-center justify-center shrink-0">
+                    <Bot className="h-4 w-4 text-indigo-400 animate-spin" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold text-white text-xs">Narrador (IA)</span>
+                      <span className="text-[10px] font-mono bg-indigo-500/30 text-indigo-300 px-1.5 py-0.5 rounded border border-indigo-500/40 font-semibold">
+                        Forjando Narrativa...
+                      </span>
+                    </div>
+                    <p className="text-xs text-indigo-200 mt-1 font-serif italic">
+                      O narrador está elaborando a próxima narrativa e calculando testes táticos...
+                    </p>
+                  </div>
+                </div>
+              )}
 
               <div ref={chatEndRef} />
 
@@ -3094,12 +3218,18 @@ export function DiscordNotebook({
                 {/* Botão Narrador IA */}
                 <button
                   type="button"
-                  onClick={(e) => askNarratorAi(e)}
+                  onClick={() => {
+                    if (inputText.trim()) {
+                      handleSendMessage();
+                    } else {
+                      askNarratorAi();
+                    }
+                  }}
                   disabled={isAskingAi}
-                  className={`p-2 rounded-full transition shrink-0 mt-0.5 ${
-                    isAskingAi ? 'bg-indigo-900/50 text-indigo-400' : 'bg-indigo-600 hover:bg-indigo-500 text-white'
+                  className={`p-2 rounded-full transition shrink-0 mt-0.5 shadow-sm ${
+                    isAskingAi ? 'bg-indigo-900/50 text-indigo-400' : 'bg-indigo-600 hover:bg-indigo-500 text-white hover:shadow-indigo-500/20'
                   }`}
-                  title="Pedir ao Narrador IA (Gemini)"
+                  title="Acionar o Narrador IA (Gemini) para continuar a história"
                 >
                   {isAskingAi ? <RefreshCw className="h-4 w-4 animate-spin" /> : <Bot className="h-4 w-4" />}
                 </button>
