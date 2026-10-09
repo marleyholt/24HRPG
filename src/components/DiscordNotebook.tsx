@@ -1133,8 +1133,9 @@ export function DiscordNotebook({
   };
 
   // Funções do Narrador IA
-  const askNarratorAi = async () => {
-    console.log("askNarratorAi chamado!", { inputText, activeChannel });
+  const askNarratorAi = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    console.log("Button clicked!");
     if (!inputText.trim() || !activeChannel) {
       console.log("askNarratorAi retornou cedo", { inputText, activeChannel });
       return;
@@ -3085,7 +3086,7 @@ export function DiscordNotebook({
                 {/* Botão Narrador IA */}
                 <button
                   type="button"
-                  onClick={askNarratorAi}
+                  onClick={(e) => askNarratorAi(e)}
                   disabled={isAskingAi}
                   className={`p-2 rounded-full transition shrink-0 mt-0.5 ${
                     isAskingAi ? 'bg-indigo-900/50 text-indigo-400' : 'bg-indigo-600 hover:bg-indigo-500 text-white'
