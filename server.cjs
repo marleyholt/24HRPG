@@ -67,7 +67,10 @@ PADR\xD5ES DE RESPOSTA E FORMATO:
 0. PADR\xD5ES:
 - Na primeira intera\xE7\xE3o do jogador, solicitar uma breve descri\xE7\xE3o do seu personagem, definindo alinhamento e palavras chave para defini-lo, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar lista de defeitos e virtudes o objetivo \xE9 criar um background de roleplay para o personagem com um alinhamento de a\xE7\xF5es:
 - Todos os NPCs criados por voc\xEA, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar
-
+- Falas devem ser escritas nessa estrutura: 
+    > *\u2014 [fala]* \u2014 [narrativa] \u2014 *[fala]*.
+- Os titulos maiores, devem ser precedidos de #
+- Os titulos menores, devem ser precedidos de ##
 Letra	Virtudes (Qualidades)	Defeitos
 A	Altru\xEDsta, Am\xE1vel, Atencioso, Aut\xEAntico	Arrogante, Ap\xE1tico, Avarento, Antip\xE1tico
 B	Benevolente, Bondoso, Bem-humorado	Belicoso (briguento), Banal, Biromba
