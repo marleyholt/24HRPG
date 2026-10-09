@@ -1,0 +1,628 @@
+1. QUER JOGAR EM QUAL CONTINENTE E NAÇÃO?
+1.1. Você será de qual continente ABIXYA ou GENEXYA?
+1.2. Se for de Abixya, estará em Bukhara, Balsaguna ou Karakorum?
+1.3. Se for de Genexya, estará em qual reino Halöramëk, Karagrön e
+Välumnia?
+Abixya: 	Árido, pedregoso, desértico e vulcânico.
+Genexya: 	Solos férteis, florestas subtropicais, bacias hidrográficas densas e rios.
+Bukhara: 	Ligas de cristal escuro, vidro, condutores de antimatéria e feixes
+de espectro-violeta. É onde predominam os Ezaris e os Primarcas de Prata
+(Valgäri).
+Balsaguna: Fossas de magma, vales de pedra negra, cidade- fortaleza.
+Muralhas de basalto, placas de carcaças mecânicas e fiação exposta. É onde
+predominam os Arazis e os Senhores do Ferro (Forzari).
+Karakorum: Capital e super-metrópole colossal, cidade vertical. Torres
+pontiagudas de vidro-negro e titânio. indústria pesada. É onde vivem os
+soberanos de Abixya: Os Izari.
+Halöramëk: É o reino governado pela raça Aramëk, firmando-se como
+governo místico e centro de conhecimento arcano do continente
+Karagrön: É o reino governado pela raça Aragron, situado no coração das
+florestas tropicais e subtropicais densas; a região repleta de templos antigos.
+Välumnia: É o reino governado pela raça Aranur, localizado nas margens
+dos maiores rios, arquipélagos e ilhas de Genexya; região repleta de seres
+ancestrais.
+--- NOVA PAGINA ---
+2. ESCOLHA SUA RAÇA ENTRE AS OPÇÕES
+2.1. Se for de Abixya, será Azaris e Ezaris?
+2.2. Se for de Genexya, será Aramëk, Aragron e Aranur?
+Azaris: Força descomunal, possuem quatro braços, cor da pele é vermelha,
+cinza, ébano ou albina; olhos vermelho, amarelo, laranja ou violeta; tem altura
+mínima de 2.10 e máxima de 3 metros.
+Bônus: ganham Fortitude, Saúde, Ataque e Resistência (+1).
+Ônus: Sofrem perda em COGNIÇÃO (-6).
+Dom: FÚRIA (Dano +4, ou Defesa +4)
+Ezaris: Velocidade sobrenatural, alongados, com músculos flexíveis; podem ter
+quatro ou dois braços; ou tem quatro olhos ou tem quatro íris; cor da pele é
+cinza, roxo e albino; Seus olhos ardem em vermelho, amarelo, laranja ou violeta.
+tem altura mínima de 2.10 e máxima de 3 metros.
+Bônus: ganham Movimento, Alcance e Disparo (+1).
+Ônus: Sofrem perda em FORÇA (-6)
+Dom: REFLEXO (Ataques Duplo, ou Esquivas Dupla)
+Aramëk: Possuem corpos esguios e eretos, com musculatura de baixa
+densidade; tem três pares de orelhas pontudas e alongadas; cor da pele
+caucasiana, rosa ou morena; os olhos sem íris e pupilas, órbitas nas cores lilás,
+preto, azul-noite e roxo, com minúsculos pontos granulados luminescentes; tem
+altura mínima de 2 e máxima de 2.40 metros.
+Bônus: Energia, Feitiço, Precisão-M e Disparo (+1).
+Ônus: Sofrem perda em DESTREZA(-6).
+Dom: TELECINESE (Dano-M +2, Defesa-M +2, ou Controle)
+Aragron: Possuem corpos maciços e bestiais, musculatura elevada; tem
+pigmentos ou listras na pele-encouraçada; cor da pele verde, cinza, azul, amarelo
+ou morena; partes escamosas que podem ser rubi, âmbar, safira, pirita ou ônix;
+os olhos podem ser rubi, âmbar, safira, ametista, pirita ou ônix; tem altura
+mínima de 2 e máxima de 2.60 metros.
+Bônus: Saúde, Resistência, Ataque e Defesa (+1).
+Ônus: Sofrem perda em CARISMA(-6).
+Dom: SOPRO (Dano-M +4) e INSTINTO (Caçada)
+--- NOVA PAGINA ---
+2.3. Aprenda sobre os Dons.
+Você poderá usar seu Dom diariamente e, quanto maior for o seu
+nível mais vezes poderá utilizá-lo. Isto é, caso tenha nível três, poderá
+usar seu dom quatro vezes ao dia.
+Como o jogador começa no nível 0, então só poderá usar seu dom
+uma única vez ao dia.
+Caso tenha vários dons, ainda terá que respeitar a regra, isto é, o
+limite se mantém. Ou seja, no nível três, você pode usar seus dons
+quatro vezes ao dia; e terá que dividir esses quatro usos pela
+quantidade de dons que possuir.
+Aranur: São homens e mulheres altos e de presença impositora, variando entre
+2 metros e 2,50 metros de altura; traços faciais harmoniosos e pele de tons
+bronzeados ou castanhos-claro; olhos nas opala-dourado, cyano-azul,
+ametista-rosa, roxo e violeta profundo; e cabelos na mesma cor dos olhos.
+Bônus: Redutor, Redutor-M, Redutor-E, Atk-Magic (+1).
+Ônus: Sofrem perda em PRIMÓRDIO(-6)
+Dom: ELEMENTAL (Redutor+2, Redutor-M+2, Redutor-E+2, Ark-Magic+2)
+--- NOVA PAGINA ---
+_______________________________
+3. ESCOLHA SUA CLASSE
+➔ SE FOR DO CONTINENTE DE ABIXYA:
+3.1. BÁRBARO:
+Recebe REDUTOR +2 quando for COMBATE (RED-SIMPLES +2) e;
+Recebe ATAQUE+2 quando for COMBATE (ATK-SIMPLES +2).
+3.2. ASSASSINO:
+Recebe ATAQUE+2 quando for EMBOSCADA (ATK-EMB +2) e;
+Recebe PRECISÃO +2d10 em EMBOSCADA (PREC-EMB +2).
+3.3. CAÇADOR:
+Recebe REDUTOR +1 quando for EMBOSCADA (RED-EMB +1),
+Recebe ATAQUE+1 quando for EMBOSCADA (ATK-EMB +1),
+Recebe PERCEPÇÃO +2d10 (PERCEBER+1) e;
+3.4. ATIRADOR:
+Recebe ATAQUE +1 quando for DISPARO (ATK-DISPARO+1),
+Recebe PERCEPÇÃO +1d10 em EMBOSCADA (PERC-EMBOSCADA +1) e;
+Recebe PRECISÃO +2d10 quando for DISPARO (PREC-DISPARO +2).
+3.5. FEITICEIRO AB:
+Recebe PRECISÃO MÁGICA +2d10 (PREC-MÁGICA +2) e;
+Recebe ATAQUE MÁGICO e causará DANO+2 (ATK-MAGIC +2).
+➔ SE FOR DO CONTINENTE DE GENEXYA:
+3.6. PALADINO:
+Recebe REDUTOR +1 quando for COMBATE (RED-SIMPLES +1),
+Recebe REDUTOR MÁGICO +1 (RED-MAGIC+1),
+Recebe REDUTOR +1 quando for EMBOSCADA (RED-EMB +1) e;
+Recebe ATAQUE MÁGICO +1 (ATK-MAGIC+1).
+3.7. GUERREIRO:
+Recebe ATAQUE +1 quando for COMBATE (ATK-SIMPLES +1);
+Recebe DEFESA +1 quando for COMBATE (DEF-SIMPLES +1);
+Recebe REDUTOR +1 quando for COMBATE (RED-SIMPLES +1) e
+Recebe PRECISÃO +1d10 quando for COMBATE (PREC-SIMPLES +1).
+3.8. MERCENÁRIO:
+Recebe PRECISÃO +1d10 em combate (PREC-SIMPLES +1),
+Recebe PRECISÃO recebe +1d10 quando for DISPARO (PREC-DISPARO +1d10) e
+Recebe ESQUIVA +2D10 (EVASIVA+2)
+3.9. RANGER:
+Recebe PERCEPÇÃO +2D10 (PERCEBER +2),
+Recebe PRECISÃO +1d10 em combate (PREC-SIMPLES +1),
+Recebe PRECISÃO +1d10 quando for DISPARO (PREC-DISPARO +1d10).
+3.10. ARQUEIRO:
+Recebe ATAQUE +2 quando for DISPARO (ATK-DISPARO +2) e
+Recebe PRECISÃO +2d10 quando for DISPARO (PREC-DISPARO +2).
+3.11. MAGO GE:
+Recebe PRECISÃO MÁGICA +1d10 (PREC-MÁGICA+1d10),
+Recebe ATAQUE MÁGICO +1 (ATK-MAGIC+1),
+Recebe DEFESA MÁGICA +1 (DEF-MAGIC+1) e;
+Recebe REDUTOR MÁGICO +1 (RED-MAGIC+1)
+--- NOVA PAGINA ---
+4. ESCOLHA SUA
+PROFISSÃO
+Você deve escolher uma profissão que se
+conecte com sua classe.
+➔ Se for do CONTINENTE de ABIXYA:
+4.1. INTELIGÊNCIA RAZIS
+(Classes FEITICEIRO,
+ASSASSINO e CAÇADOR)
+RAZIS poderão acessar banco de informação referente ao
+Território, Civilizações e Mitos de Abixya explorado, colonizado e
+selvagem sem teste.
+Poderá rolar teste de conquista para encontrar itens, relíquias ou
+tesouros em cada exploração, sendo 2 vezes em Abixya, ou 1 vez
+em outros CONTINENTES.
+4.2. MILITAR RAZEROs
+(Classes BÁRBARO,
+ATIRADOR, ASSASSINO e
+CAÇADOR)
+RAZEROs poderão acessar banco de informação referente aos
+Criminosos, Mercenários, Cidadãos Procurados de Abixya, ainda
+que sejam de outras raças e nações.
+Poderá rolar teste de fraqueza para encontrar ponto fraco dos
+inimigos no banco de informação em cada exploração, sendo 2
+vezes quando forem de Abixya, ou 1 vez quando forem de outros
+CONTINENTES.
+4.3. PARAMILITAR RAZAGI
+(Classes ATIRADOR,
+BÁRBARO, PREDADOR e
+ASSASSINO)
+RAZAGIs poderão acessar banco de informação referente a
+Animais, Criaturas, Mutações que sejam Comuns, Procuradas,
+ou Lendárias que sejam ou tenham vindo para ABIXYA, ainda
+que originalmente de outras nações.
+Poderá rolar teste de fragilidade para encontrar ponto vital dos
+Animais, Criaturas, Mutações no banco de informação em cada
+exploração, sendo 2 vezes quando forem de Abixya, ou 1 vez
+quando forem de outros CONTINENTES.
+➔ Se for do CONTINENTE de GENEXYA:
+4.1. EXPLORADOR GËNOs
+(Profissão é impedida para a
+Classe CAVALEIRO)
+GËNOs poderão acessar bases de informação referente ao
+Território, História, Cultura, Idioma e Ritos de GENEXYA já
+explorado sem teste.
+Poderá rolar teste de conquista para encontrar lugares especiais,
+artefatos místicos e tesouros lendários em cada exploração, sendo 2
+vezes em Genexya, ou 1 vez em outros CONTINENTES.
+4.2. GUARDIÕES NEXUS
+(Profissão é impedida para a
+Classe MERCENÁRIO)
+NEXUSs poderão acessar bases de informação referente aos
+(Bosses Humanoides): Inimigos Altamente Procurados, Inimigos
+de Raças Ancestrais, ou seres semidivinos que sejam de qualquer
+raças e nação de GENEXYA.
+Poderá rolar teste de fraqueza para encontrar ponto fraco dos Bosses
+em cada exploração por 2 vezes quando forem de Genexya.
+4.3. MERCENÁRIOS AXEN
+(Profissão é impedida para a
+Classe FEITICEIRO)
+AXENs poderão acessar bases de informação referente aos (Bosses
+Criatura): Animais Ancestrais, Criaturas Míticas e Monstros
+Lendários e semidivinos que sejam da nação de GENEXYA.
+Poderá rolar teste de fragilidade para encontrar ponto vita dos Bosses
+em cada exploração por 2 vezes quando forem de Genexya.
+--- NOVA PAGINA ---
+5. ESCOLHA SUAS PERÍCIAS
+Você deve escolher uma perícia de classe,
+uma de profissão e uma de armamento.
+5.1. ESCOLHA UMA PERÍCIA DE CLASSE
+(ABIXYA)
+1. BÁRBARO
+Força Bruta: Concede +1 FORTITUDE e, uma vez ao dia, causará
+DANO+1 em COMBATE quando atacar ou realizar testes de AGARRAR.
+Avanço Frenético Concede +1 MOVIMENTO e, uma vez ao dia, recebe
+um (1) Re-roll em Teste de PRECISÃO em COMBATE ao avançar usando
+toda a fúria contra adversários.
+2. ASSASSINO
+Furtividade Sombria: Concede +1 MOVIMENTO e, uma vez ao dia,
+causará DANO+1 em EMBOSCADA (ATK-EMBOSCADA).
+Golpe Cirúrgico: Concede +1 ALCANCE e, uma vez ao dia, 1x Re-roll
+em Teste de PRECISÃO em EMBOSCADA para maximizar a precisão ao
+desferir ataques surpresa ou furtivo.
+3. CAÇADOR (ABIXYA)
+Percepção Aguçada: Concede +1 MOVIMENTO e 1x Re-roll em Teste de
+PERCEPÇÃO em EMBOSCADA, uma vez ao dia, para ler o ambiente ou
+usar a habilidade PREVER na contra emboscada.
+Pontaria de Caça: Concede +1 ALCANCE e 1x Re-roll em Teste de
+PRECISÃO em EMBOSCADA, para estabilizar disparos a distância
+(PREC-DISPARO) sob condições adversas.
+4. ATIRADOR (ABIXYA)
+Avaliação do Perigo: Concede +1 RAISE, uma vez ao dia, quando usar a
+ferramenta EVADIR ou ACELERAR, em combate.
+Prática de Armas: Concede +1 FORTITUDE e Concede +1 ALCANCE
+para alternar rapidamente entre ataques corpo a corpo e à distância.
+5. FEITICEIRO AB (ABIXYA)
+Foco Arcano: Concede +1 DESTINO e, uma vez ao dia, concede +1
+RAISE ao usar a ferramenta FOCAR para canalizar energias arcanas
+extremas sem perder a concentração.
+Mestria Mágica: Concede +1 ENERGIA e, uma vez ao dia, 1x Re-roll em
+Teste de PRECISÃO MÁGICA em EMBOSCADA ou COMBATE para
+aumentar a taxa de acerto de feitiços e simpatias (PREC-MÁGICA).
+--- NOVA PAGINA ---
+5.2. ESCOLHA UMA PERÍCIA DE PROFISSÃO (Abixya)
+1. INTELIGÊNCIA RAZIS 	.
+Mapeamento de Relíquias: Concede +1 ALCANCE e 1 Re-roll em testes
+de Cognição ao analisar ruínas, artefatos e estruturas antigas para encontrar
+tesouros e tesouros lendários.
+Sobrevivência Árida: Concede +1 SAÚDE e 1 Re-roll em testes de
+Cognição para identificar caminhos seguros, fontes de água e perigos
+ambientais nos desertos e terrenos vulcânicos de Abixya.
+2. MILITAR RAZEROS 	.
+Interrogatório e Investigação: Concede +1 SAÚDE e 1 Re-roll em testes
+de FÍSICO/COGNIÇÃO para extrair informações de procurados, cidadãos
+procurados e mercenários com ou sem violência.
+Tática de Combate: Concede +1 MOVIMENTO e, uma vez ao dia, 1x
+Re-roll em PRECISÃO no COMBATE para explorar os pontos fracos
+táticos de alvos e criminosos conhecidos.
+3. PARAMILITAR RAZAGI 	.
+Rastreamento de Feras: Concede +1 ALCANCE e 1 Re-roll em testes de
+COGNIÇÃO ao seguir pegadas, odores e sinais de criaturas míticas e
+mutações.
+Anatomia Monstruosa: Concede +1 FORTITUDE e 1x Re-roll em um
+Testes de PRECISÃO em EMBOSCADA, uma vez ao dia, para atingir os
+pontos vitais de animais e bestas selvagens.
+5.3. ESCOLHA UMA PERÍCIA DE ARMA (Abixya)
+1) MACHADO E MONTANTE: Rolagem de Precisão em Força + Fortitude.
+2) LANÇA E CLAVA: Rolagem de Precisão em Destreza + Movimento.
+3) ESPADAS E ADAGAS: Rolagem de Precisão em DESTREZA + MOVIMENTO.
+4) RIFLE DE DISPARO E ADAGA: Rolagem de Precisão em COGNIÇÃO +
+MOVIMENTO.
+5) POLEARM, GANCHO, CORRENTE E FOICE: Rolagem de Precisão em
+FORÇA + MOVIMENTO.
+6) FACAS E PISTOLAS: Rolagem de Precisão em COGNIÇÃO + ALCANCE.
+7) LANÇA, ADAGAS E FACAS: Rolagem de Precisão em DESTREZA +
+MOVIMENTO.
+8) RIFLE DE DISPARO E PISTOLA: Rolagem de Precisão em COGNIÇÃO +
+ALCANCE.
+--- NOVA PAGINA ---
+9) ESCUDO, ESPADA E LANÇA: Rolagem de Precisão em DESTREZA +
+FORTITUDE.
+10) ESCUDO E MONTANTE: Rolagem de Precisão em FORÇA + FORTITUDE.
+11) AMULETO OU ANEL: Rolagem de PRECISÃO MÁGICA em COGNIÇÃO +
+ALCANCE.
+12) CAJADO OU TOTEM (Varinha, adaga cerimonial ou outro artefato cerimonial):
+Rolagem de PRECISÃO MÁGICA em CARISMA + ALCANCE.
+5.4. ESCOLHA UMA PERÍCIA DE CLASSE
+(GENEXYA)
+1. RANGER
+Leitura de Pistas: Concede +1 ALCANCE e 1x Re-roll em Teste de
+PERCEPÇÃO em EMBOSCADA, uma vez ao dia, para antecipar
+movimentos e usar a habilidade PREVER nas florestas de Genexya.
+Tiro Certeiro: Concede +1 MOVIMENTO e 1x Re-roll em Teste de
+PRECISÃO em COMBATE, uma vez ao dia, para estabilizar rajadas e
+disparos contínuos (PREC-DISPARO).
+2. GUERREIRO
+Postura Marcial: Concede +1 FORTITUDE e causará DANO+1 em
+COMBATE, uma vez ao dia, ao utilizar a ferramenta ATACAR para
+desferir golpes firmes (ATK-SIMPLES).
+Guarda Fechada: Concede +1 SAÚDE e 1x Re-roll em Teste de EVASÃO
+em COMBATE, uma vez ao dia, para bloquear e desacelerar o avanço
+inimigo (DEF-SIMPLES).
+3. MERCENÁRIO
+Giro Tático: Concede PREC-SIMPLES+1, uma vez ao dia, ao utilizar a
+ferramenta ABDICAR para reorientar sua posição no campo de batalha.
+Mira Treinada: Concede +1 SAÚDE e +1 MOVIMENTO para alternar
+rapidamente entre ataques corporais e disparos de cobertura
+(PREC-SIMPLES / PREC-DISPARO).
+4. PALADINO
+Bastião de Defesa: Concede +1 FORTITUDE; e, uma vez ao dia, +1
+RAISE ao acionar a ferramenta RESISTIR para absorver impactos diretos
+(RED-SIMPLES).
+Vigilância de Guarda: Concede +1 SAÚDE e 1x Re-roll em Teste de
+PERCEPÇÃO em EMBOSCADA, uma vez ao dia, para antecipar ataques
+surpresa e mitigar seus danos (PERC-EMBOSCADA).
+5. MAGO
+Sintonia Elemental: Concede +1 ENERGIA e causará DANO
+MAGICO+1 em COMBATE, uma vez ao dia, ao canalizar o fluxo natural
+de Genexya (ARAR) para ataques mágicos (ATK-MAGIC).
+--- NOVA PAGINA ---
+Controle Arcano: Concede +1 DESTINO e, uma vez ao dia, 1x Re-roll em
+Teste de PRECISÃO MÁGICA em COMBATE ou EMBOSCADA para
+erguer proteções místicas e escudos defensivos ou feitiços ofensivos
+(PREC-MÁGICA+2).
+6. ARQUEIRO
+Olho de Águia: Concede +1 ALCANCE e 1x Re-roll em Teste de
+PRECISÃO em EMBOSCADA, uma vez ao dia, para calcular trajetórias
+perfeitas à longa distância (PREC-DISPARO).
+Disparo Veloz: Concede +1 MOVIMENTO e causará DANO+1 em
+COMBATE, uma vez ao dia, ao executar múltiplos disparos em sequência
+(ATK-DISPARO).
+5.5. ESCOLHA UMA PERÍCIA DE PROFISSÃO
+(GENEXYA)
+1. EXPLORADORES GËNOS 	.
+Cartografia Mística: Concede +1 ALCANCE e 1 Re-roll em testes de
+COGNIÇÃO ao analisar mapas antigos e ritos para localizar artefatos e
+lugares místico-lendários em Genexya.
+Linguística Antiga: Concede +1 DESTINO e 1 Re-roll em testes de
+COGNIÇÃO para traduzir dialetos, escritas arcaicas e tradições de ruínas
+exploradas.
+2. GUARDIÕES NEXUS 	.
+Conhecimento Ancestral: Concede +1 SAÚDE e 1 Re-roll em testes de
+COGNIÇÃO para identificar a história, costumes e padrões de Bosses
+Humanoides e seres semidivinos.
+Presença Imponente: Concede +1 FORTITUDE e 1x Re-roll em Teste de
+PERCEPÇÃO em COMBATE, uma vez ao dia, para subjugar mentalmente
+ou resistir à intimidação de alvos de alto valor.
+3. MERCENÁRIOS AXEN 	.
+Estudo de Mitos: Concede +1 ALCANCE e 1 Re-roll em testes de
+COGNIÇÃO para mapear comportamentos, hábitos e fragilidades de
+Animais Ancestrais e Monstros Lendários.
+Preparo de Emboscada: Concede +1 MOVIMENTO e 1x Re-roll em Teste
+de PRECISÃO em EMBOSCADA, uma vez ao dia, ao armar armadilhas e
+preparar o terreno para caçar grandes feras.
+--- NOVA PAGINA ---
+5.6. ESCOLHA UMA PERÍCIA DE ARMA (GENEXYA)
+13) ARCO LONGO E BALESTRA: Rolagem de Precisão em COGNIÇÃO +
+ALCANCE.
+14) ESPADA BASTARDA E ESCUDO: Rolagem de Precisão em FORÇA +
+FORTITUDE.
+15) LANÇA DE CAVALARIA E ADAGA: Rolagem de Precisão em DESTREZA +
+MOVIMENTO.
+16) ESPADA CURTA E CHICOTE: Rolagem de Precisão em DESTREZA +
+MOVIMENTO.
+17) ALABARDA E MACHADO DE GUERRA: Rolagem de Precisão em FORÇA +
+FORTITUDE.
+18) ARCO CURTO E ADAGAS: Rolagem de Precisão em DESTREZA + ALCANCE.
+19) GLÁDIO E ESCUDO DE CORPO: Rolagem de Precisão em FORÇA +
+FORTITUDE.
+20) BESTA LEVE E FACAS DE ARREMESSO: Rolagem de Precisão em
+COGNIÇÃO + ALCANCE.
+21) MARTELO DE GUERRA E ESCUDO: Rolagem de Precisão em FORÇA +
+FORTITUDE.
+22) CAJADO ELEMENTAL E ORBE: Rolagem de PRECISÃO MÁGICA em
+PRIMÓRDIO + ALCANCE.
+23) GRIMOIRE E TALISMÃ ANCESTRAL: Rolagem de PRECISÃO MÁGICA em
+COGNIÇÃO + DESTINO.
+7. VANTAGEM RACIAL
+Caso você tenha duas desvantagens, então irá
+igualmente receber uma vantagem racial abaixo como
+mais uma perícia ao personagem.
+1. AZARI 	.
+FORÇA EXTREMA: Receberá FORTITUDE +2. Seu Azari pertence a uma casta
+especial com linhagem dos grandes FORZARI de Balsaguna, então você tem
+músculos maiores e mais volumosos.
+SAÚDE EXTREMA: Receberá SAÚDE+3. Seu Azari pertence a uma casta especial
+com linhagem dos grandes FORZARI de Balsaguna, então você é grande até mesmo
+entre os Azari.
+--- NOVA PAGINA ---
+2. EZARI 	.
+VELOCIDADE EXTREMA: Receberá MOVIMENTO +2. Seu Ezari pertence a
+uma casta especial com linhagem dos grandes assassinos de Bukhara, então a
+velocidade dos seus braços é algo especialmente difícil de acompanhar.
+MENTALIDADE EXTREMA: Receberá ALCANCE+2. Seu Ezari pertence a uma
+casta especial com linhagem dos grandes cientistas de Bukhara, então a velocidade da
+sua mente e percepção está acima da média.
+3. ARAMËK 	.
+TELECINESE SUPERIOR: Receberá ENERGIA+3. Seu Aramëk possui uma
+conexão mística profunda com o ambiente, mas suas reações físicas e reflexos
+corporais são mais lentos quando precisa agir sob pressão imediata.
+VOO TELECINÉTICO: Receberá FLUTUAÇÃO+1 e ALCANCE +1. Seu Aramëk
+possui uma conexão mística profunda com o ambiente.
+5. ARAGRON 	.
+ASAS E VOO: Receberá FLUTUAÇÃO+2. Seu Aragron pertence à casta dos
+voadores e possui grandes e poderosas asas.
+CAUDA: Receberá RAISE+1 de movimentação, duas vezes ao dia, por uso da
+cauda em combate. Seu Aragron pertence à casta dos caudas-longas que se estendem
+por quase cinco metros.
+6. ARANUR 	.
+DUPLO ELEMENTO: Receberá REDUTOR+3. Seu Aranur tem vínculo com duas
+linhagens ancestrais e possui em seu corpo dois elementos simultâneos.
+8. ESCOLHA UMA
+DESVANTAGEM RACIAL
+Você deve escolher uma desvantagem, ou subtrair uma
+perícia escolhida (seja racial, classe ou arma) escolhida
+anteriormente na ficha.
+1. AZARI 	.
+MENTE RÍGIDA: Rolará 1 dado de perigo (em Abixya) ou 2 (em outros
+CONTINENTES) e acrescenta 10% de chance de inimigo à exploração. Seu Azari
+move-se por caminhos que entende adequados e, habitualmente, segue por rotas
+próprias e força a comitiva à acompanhá-lo.
+--- NOVA PAGINA ---
+CORPO PESADO: Perde 1 ponto de FORTITUDE e rolará -1 dado de
+PRECISÃO em combate. Seu Azari tem um corpo muito forte e pesado, mas seus
+músculos rígidos se desenvolveram mais que seus músculos flexíveis, então você tem
+mais peso para mover que seus iguais.
+MUTANTE DEFORMADO: Perde 1 ponto de DESTINO e receberá +1 DANO
+adicional sempre que for atingido na parte deformada. Seu Azari tem uma grande
+parte do corpo deformada ou mecânica (um dos braços, uma das pernas ou a cabeça) e
+a conexão daquilo com sua pele, ou a própria deformação, lhe faz sangrar
+exaustivamente.
+2. EZARI 	.
+PELE FRÁGIL: Receberá DANO +1 Adicional ao sofrer ataques corporais diretos
+de ferramentas ESMAGAR e AGARRAR; e de dispositivos que causam
+EXPLOSÃO ou IMPACTO. Seu Ezari tem a pele mais frágil na camada interna.
+EXAUSTÃO PRECOCE: Perde 1 ponto de MOVIMENTO; e, uma vez por dia,
+perderá 1 ponto de ENERGIA. Seu Ezari tem uma circulação sanguínea mais
+acelerada e sempre que a adrenalina do combate desperta, perderá energia.
+MUTANTE DOENTE: Perde 1 ponto de DESTINO e perderá 1 ponto de SAÚDE
+adicional, uma vez por dia, sempre que seus tubos e aparelhos biológicos forem
+cortados ou destruídos. Seu Ezari tem um degeneração genética severa por ter sido
+exposto indevidamente e sem preparo à antimatéria, então ele possui pulmões
+mecânicos, ou coração artificial, ou órbitas mecânicas; porém, tudo isso possui fios e
+tubos externos que se forem atingidos você sente dores intensas e severas, além do
+risco de sofrer um colapso.
+3. ARAMËK 	.
+CONEXÃO ATRAPALHADA: Perde 1 ponto de MOVIMENTO e rolará -1 dado
+de EVASÃO em combate. Seu Aramëk possui uma conexão mística profunda com o
+ambiente, mas suas reações físicas e reflexos corporais são mais lentos quando precisa
+agir sob pressão imediata.
+SOBRECARGA ESPIRITUAL: Perde 1 ponto de SAÚDE e 1 ponto de
+FORTITUDE. Seu Aramëk canaliza forças naturais com alta frequência e, sempre
+que expõe seu corpo ao estresse do combate ou à magia intensa, sofre um desgaste
+interno acelerado.
+MENTE QUEBRADA: Perde 1 ponto de DESTINO e 1 ponto de ALCANCE. Seu
+Aramëk vê e ouve coisas que não existem; ou que já aconteceram em histórias
+antigas. Sua mente e sua conexão é muito poderosa com o ARAR, e é muito mais
+intensa do que você é capaz de suportar, de modo que sua mente às vezes se
+fragmenta e te leva para lugares distorcidos, estranhos e te deixa em estado
+vegetativo.
+5. ARAGRON 	.
+PRESENÇA HOSTIL: Acrescenta 20% de chance de inimigo à exploração (em
+Genexya) ou 30% (em outros CONTINENTES). Seu Aragron possui uma postura
+--- NOVA PAGINA ---
+rígida e intimidadora que frequentemente atrai a atenção indesejada de patrulhas
+locais, criaturas territoriais e chefes de guerra.
+RIGIDEZ MUSCULAR: Perde 1 ponto de FORTITUDE e rolará -1 dado de
+PRECISÃO em combate. Seu Aragron tem a estrutura muscular extremamente
+densa e voltada para a força bruta, sacrificando a flexibilidade necessária para alinhar
+golpes finos ou tiros rápidos.
+BESTIALIDADE: Perde 1 ponto de DESTINO e será incapaz de DEFENDER
+durante o combate. Seu Aragron perde a razão quando ingressa em combate e a
+adrenalina desperta sua fúria. Embora possa se mover muito rápido, seus movimentos
+são bestiais e ferozes, não sendo possível usar posições defensivas.
+6. ARANUR 	.
+CORPO SENSÍVEL: Receberá DANO +1 Adicional ao sofrer ataques de
+ferramentas FOCAR e CONCENTRAR; e de dispositivos com EXPLOSÃO ou
+PARALYSE. Seu Aranur possui uma sensibilidade arcana e física aflorada, tornando
+sua camada muscular vulnerável a reações de impacto místico e perfurações
+profundas.
+ORGULHO ANCESTRAL: Uma vez por dia, desde que entre em combate,
+perderá 2 pontos de ENERGIA. Seu Aranur sempre exibe muito poder elemental,
+mantendo uma postura ancestral, aristocrática e ou superior, mesmo diante de perigos
+inesperados.
+CORRUPÇÃO ANCESTRAL: Perde 1 ponto de DESTINO e perderá 1 ponto
+de SAÚDE adicional, uma vez por dia, sempre que for atingido por armas ou
+projéteis abixyanos. Seu Aranur carrega uma mácula mística em sua linhagem que
+rejeita a antimatéria e a tecnologia pesada; sempre que entra em contato ou é atingido
+por engrenagens, dispositivos arcanos corrompidos ou tecnologia avançada, sofre
+dores excruciantes e perde a capacidade de focar seus sentidos à longa distância.
+9. FRAQUEZAS DE ATRIBUTOS
+MÍNIMOS
+Se você distribuir pontos e no final algum atributos ficar
+abaixo de 10, então, deverá escolher uma das seguintes
+Fraquezas
+1. FORÇA 	.
+FRÁGIL CONTRA DISPARO: Recebe DANO+1 Adicional contra projéteis
+disparados, em combate ou emboscada.
+FRÁGIL CONTRA ELEMENTAL: Recebe DANO+1 Adicional de queimadura
+(BURN), corrosão (ACID), congelamento (FREEZING), ou elétrico (PARALYSE).
+2. DESTREZA 	.
+MEDO DE QUANTIDADES: Sofre RAISE+1 Adicional de velocidade em
+combates onde os números dos inimigos lhe superem em 1 ou mais.
+--- NOVA PAGINA ---
+MEDO DE MONSTROS: Sofre RAISE+1 Adicional de velocidade em combates
+contra animais, criaturas ou bestas.
+3. COGNIÇÃO 	.
+FRÁGIL CONTRA SURPRESAS: Recebe DANO+1 Adicional em ataques
+emboscados ou oportunidade.
+DEFICIÊNCIA SENSORIAL: Sofre RAISE+1 Adicional ao ser atacado em
+EMBOSCADA ou OPORTUNIDADE.
+4. CARISMA 	.
+CAÇADO, CICATRIZES ou DEFORMAÇÃO: Recebe INIMIGO
+ADICIONAL+1 em situações de combate, ou emboscada.
+ODIADO E INFAME: Sofre redução de PARTY-1, isto é, sua equipe só poderá ter
+mais um(1) NPC para Teamplay em vez de dois(2).
+4. PRIMÓRDIO 	.
+NENHUMA.
+10. ESCOLHA UMA SEGUNDA
+DESVANTAGEM RACIAL
+Você pode escolher mais uma desvantagem ou fraqueza
+de atributo e obter mais uma perícia (classe, profissão
+ou arma) ou vantagem (raça) e incluir na ficha.
+--- NOVA PAGINA ---
+_______________________________
+11. MODELO DE FICHA
+FICHAMENTO 	.
+NOME:
+RAÇA:
+CLASSE:
+PROFISSÃO:
+CIDADE NATAL:
+CONTINENTE / NAÇÃO:
+ATRIBUTOS 	.
+FORÇA
+DESTREZA:
+COGNIÇÃO:
+CARISMA:
+PRIMÓRDIO:
+MARCADORES 	.
+SAÚDE:
+ENERGIA:
+DESTINO:
+ALCANCE:
+FORTITUDE:
+MOVIMENTO:
+TESTES 	.
+PRECISÃO:
+PREC-EMBOSCADA:
+PREC-DISPARO:
+PREC-MÁGICA:
+EVASÃO:
+PERCEPÇÃO:
+COMBATE 	.
+ATAQUE:
+ATK-EMBOSCADA:
+DEFESA:
+REDUTOR:
+RED-EMBOSCADA:
+RED-MÁGICA:
+--- NOVA PAGINA ---
+12. REGRAS DA FICHA
+1. O jogador inicia o jogo no nível 0 e recebe 60 pontos para distribuir nos atributos:
+FORÇA, DESTREZA, COGNIÇÃO, CARISMA e PRIMÓRDIO. Porém, 10 destes
+60 pontos ficarão forçosamente dedicados à atributos com penalidade, para que
+mantenham o mínimo de 4 pontos. Exemplo: um Azari de nível 1, tem 10 dos seus
+60 pontos já distribuídos em Cognição, para que seu atributo esteja no mínimo 4.
+2. O jogador começará do nível zero (0) até o nível cinco (5). E à cada nível, o jogador
+receberá seis (6) pontos para distribuir livremente nos atributos: FORÇA,
+DESTREZA, COGNIÇÃO, CARISMA e PRIMÓRDIO.
+3. O jogador poderá distribuir nos atributos FORÇA, DESTREZA, COGNIÇÃO,
+CARISMA, sendo que o mínimo é de 4 pontos.
+4. Sempre que o valor menor distribuído nos atributos FORÇA, DESTREZA,
+COGNIÇÃO, CARISMA for inferior à 10 pontos, o personagem receberá uma
+desvantagem.
+5. O personagem inicia com o Marcador 0 e recebe 1 Ponto no Marcador para cada 10
+pontos distribuídos no Atributo.
+6. O atributo Primórdio inicia com 10 pontos e a cada nível o personagem receberá
++10 pontos no atributo Primórdio.
+7. Recapitulando, os ATRIBUTOS são:
+a. FORÇA: O jogador deverá distribuir um mínimo de 4 pontos.
+b. DESTREZA: O jogador deverá distribuir um mínimo de 4 pontos.
+c. COGNIÇÃO: O jogador deverá distribuir um mínimo de 4 pontos.
+d. CARISMA: O jogador deverá distribuir um mínimo de 4 pontos.
+e. PRIMÓRDIO: O jogador distribuirá pontos opcionalmente, sendo que o atributo
+Primórdio inicia com 10 pontos e a cada nível o personagem receberá +5 pontos no
+atributo Primórdio.
+8. Recapitulando, os MARCADORES são:
+a. SAÚDE: Todo personagem tem um (1) ponto de SAÚDE, e recebe +1 para cada
+nível que possuir.
+b. ENERGIA: Todo personagem tem um (1) pontos de ENERGIA, e recebe +1 para
+cada 10 pontos no atributo CARISMA.
+c. DESTINO: Todo personagem tem um (1) ponto de DESTINO, e recebe +1 para
+cada 10 pontos no atributo PRIMÓRDIO.
+d. FORTITUDE: Todo personagem tem um (1) pontos de FORTITUDE, e recebe +1
+para cada 10 pontos no atributo FÍSICO.
+--- NOVA PAGINA ---
+e. MOVIMENTO: Todo personagem tem um (1) pontos de MOVIMENTO, e recebe
++1 para cada 10 pontos no atributo DESTREZA.
+f. ALCANCE: Todo personagem tem um (1) pontos de ALCANCE, e recebe +1 para
+cada 10 pontos no atributo COGNIÇÃO.
+g. Há um marcador especial chamado FLUTUAÇÃO que não fica listado, pois todo
+personagem possui o atributo com valor zero (0). Caso alguma vantagem racial
+conceda flutuação e seu valor base seja superior à zero (ou seja, 1 ou mais), então
+recebe +1 para cada 10 pontos no atributo PRIMORDIO.
+9. O personagem possuirá índices de combate, que serão: Ataque, Defesa e Redutor.
+Todo personagem inicia com zero (0) de Redutor, um (1) de Ataque e (1) de Defesa.
+10. Todo personagem tem Redutor de Emboscada (RED-EMBOSCADA) zero (0).
+11. Todo personagem começa com Precisão no uso de Magia (PREC-MÁGICA) em
+zero (0), exceto quando a bônus das raças e perícias. O termo “Feitiço” usado para
+os ARAMEK é outros é sinônimo de 	PRECISÃO no uso de Magia
+(PREC-MÁGICA).
+12. Todo personagem começa com Ataque Mágico em zero (0) no uso de Magia
+(ATK-MAGIC), exceto quando a bônus das raças e perícias. Há uma exceção à
+regra, pois sempre que for uma Classe Mágica como FEITICEIRO AB e
+FEITICEIRO GE o personagem começa com Ataque Mágico um (1) no uso de
+Magia (ATK-MAGIC) e Defesa Mágica um (1) no uso de Magia (DEF-MAGIC).
+13. Todo personagem começa com ATAQUE no uso de projéteis e disparos
+(ATK-DISPARO) em zero (0), exceto quando há bônus das raças e perícias.
+14. Todo ataque em EMBOSCADA (ATK-EMBOSCADA) causa DANO+1.
+15. Todo ataque em RASANTE (ATK-RASANTE), seja caindo em cima do inimigo, ou
+voando de cima para baixo, causa DANO+1.
+16. O personagem poderá ter até TRÊS (3) PERÍCIAS. As perícias concederão um (1)
+RE-ROLL no ATRIBUTO de especialização e um (1) ponto de MODIFICADOR.
+17. Os bônus da raça, da classe e perícias irão somar ou subtrair nos atributos,
+modificadores, índices de teste e índices de combate.
+18. O personagem fará testes de ATRIBUTO, onde rolará 4d10 para obter o valor
+contido no atributo.
+19. O personagem fará testes pelos ÍNDICES de COMBATE, são: Precisão, Evasão,
+Percepção.
+a. PRECISÃO: em combate desarmado, será calculada pelo valor base de FORÇA
+somado a 1d10, e mais 1 para cada ponto de FORTITUDE no atributo. Exemplo:
+um personagem com 25 pontos de força, com 3 pontos de Fortitude, faria teste
+precisão de 25+4d10.
+b. A regra da PRECISÃO poderá ser alterada com base no uso da perícia da arma.
+Exemplo: um personagem com Destreza 25, Alcance 3, e que esteja usando a
+perícia de arma ARCO CURTO E ADAGAS, faria teste de precisão de 25+4d10.
+--- NOVA PAGINA ---
+c. EVASÃO: em combate desarmado, será calculada pelo valor base de DESTREZA
+somado a 1d10, e mais 1 para cada ponto de MOVIMENTO no atributo. Exemplo:
+um personagem com 25 pontos de destreza e 3 pontos de Movimento, faria teste de
+evasão de 25+4d10.
+d. PERCEPÇÃO: em combate desarmado, será calculada pelo valor base de
+COGNIÇÃO somado a 1d10, e mais 1 para cada ponto de ALCANCE no atributo.
+Exemplo: um personagem com 25 pontos de cognição e 3 pontos de alcance, faria
+teste de percepção de 25+4d10.

@@ -1,0 +1,1210 @@
+SISTEMA DE TELUMAK – RPG
+TERRA DOS DEUSES
+1. CONTEXTO 	2
+2. CRIAÇÃO DE PERSONAGENS 	3
+3. ATRIBUTOS 	3
+4. DOMÍNIOS E FRAQUEZAS 	5
+5. MARCADORES E RECURSOS 	6
+5.6. BENEFÍCIOS AVANÇADOS POR ATRIBUTO 	9
+5.6.1. FERRAMENTAS AVANÇADAS POR ATRIBUTO 	9
+FÍSICO 	9
+DESTREZA 	9
+COGNIÇÃO 	10
+CARISMA 	10
+5.6.2. REGRAS GERAIS PARA FERRAMENTAS AVANÇADAS 	10
+6. REGRAS DE TESTES E ROLAGENS 	10
+7. MECÂNICAS ESPECIAIS 	12
+7.1. EMBOSCADA E ARMADILHA 	14
+7.2. ALCANCE E MOVIMENTO 	14
+7.3. PESO DE ARMAMENTOS E ITENS 	14
+7.4. ATUAÇÃO EM EQUIPE (TEAM PLAY) 	15
+7.4.1. Bônus em Testes de Combate em Equipe 	15
+7.4.2. Aplicação da Equipe Fora do Combate 	16
+8. EVOLUÇÃO DE PERSONAGEM 	16
+9. PENALIDADES 	18
+10. ESTRUTURA DA FICHA 	18
+MODELO DE FICHA 	20
+11. UNIDADES MONETÁRIAS 	22
+Notas de Ambientação e Uso 	23
+LISTA DE PREÇOS E EQUIVALÊNCIAS ECONÔMICAS 	24
+ITENS E SERVIÇOS COMUNS 	24
+PRODUTOS DE SUBSISTÊNCIA 	24
+ARMAS E EQUIPAMENTOS 	24
+ITENS ESPECIAIS E SERVIÇOS PROFISSIONAIS 	24
+GRANDES INVESTIMENTOS E LUXOS 	24
+12. ESCALAS DE FORTUNAS 	25
+EXEMPLO DO PADRÃO DE VIDA PARA UM COMERCIANTE RICO 	26
+EXEMPLO DO PADRÃO DE VIDA PARA UM CLÃ MENOR 	26
+EXEMPLO DO PADRÃO DE VIDA PARA UM CLÃ ANCESTRAL 	26
+13. ARMAS E DISPOSITIVOS DE PESO 1 	27
+14. ARMAS E DISPOSITIVOS DE PESO 2 	29
+15. ARMAS E DISPOSITIVOS DE PESO 3 	30
+16. LISTA DE DOMÍNIOS 	31
+--- NOVA PAGINA ---
+1. CONTEXTO
+A história observa inicialmente a ancestral e mitológica Província de Hänn logo nos
+primórdios da 2ª Era, onde protagoniza a Grande Unificação promovida por Hänn
+Yammataru, que naquele tempo era conhecido como Byakutai Dai Kami, cujo renomeou
+o país como Hakutai Koku, isto é, o reino do Sol Branco. Em meados da 2ª Era, após a
+morte de Hänn Yammataru e de Dränn Kyohmaru, ocorre o Julgamento Celestial
+(Tenbatsusenki) e o reino do Sol Branco é inteiramente dominado para torna-se uma
+colônia de exploração do Império Celestial (Sankoutei).
+Contudo, no final da 2ª Era e às vésperas do 3º Grande Ciclo, o poderoso Hänn Uryuutaru
+escolheu se tornar um revolucionário e liderou um grupo de resistência contra o governo
+imperial. O príncipe imperial, Inari Yamatatsu, soberano da colônia, pôs-se em seu
+caminho e lhe aprisionou por sua traição. O fracasso retumbante da tentativa de se erguer
+contra o Império gerou um marco histórico, pois muitos foram punidos sem que nenhuma
+guerra civil se instaurasse ou ganhasse forças, por isso, tal evento passou a ser chamado
+de Rebelião Silenciosa.
+Cem anos depois, a profecia do Supremo Imperador dos deuses, nascida do coração do
+império Sankōtei, por uma revelação do Santuário Buddamida que ecoa entre as sombras
+dos mais leais da Corte Imperial e estremece sua estrutura milenar: “Os semideuses estão
+surgindo, filhos improváveis da mortalidade e da divindade. Com livre-arbítrio para
+desafiar o próprio destino e poder suficiente para ferir seres superiores e divinos, eles
+são a centelha de uma nova era… ou o estopim de sua destruição.”.
+A apreensão advinda de tal mandato celestial (pergaminho) fizera toda a alta Corte
+Imperial estremecer. A Imperatriz Inari e o Imperador Inagi se puseram a meditar — e
+ninguém, seja mortal ou imortal, recebeu permissão para interromper sua contemplação.
+Cada colônia ficou sob a regência de um príncipe; e o Reino Celestial sob a regência de
+Seitaishogun — Líder Supremo do Exército Imperial. A comunicação da profecia e a
+ordem dos imperadores chegaram aos príncipes.
+As campanhas de expansão do reino da Lua Vermelha (Akatsukai Koku) agora, sob o
+maquiavélico olhar de Inagi Ryugetsujin, passaram também a caçar os semideuses.
+Enquanto isso, paulatinamente, o silencioso Oni Daioh, Kazanmaru, retorna de sua
+ausência e de seu silêncio em prenúncio ao caos irrefreável.
+A história segue a jornada de seis semideuses — filhos de Kami, Oni e Celestiais — que
+despertam no fim da 2ª Era. Entre a fé rebelde de Uryuutaru e o domínio implacável do
+Império Sankōtei, os jogadores trilham o destino da Terra dos Deuses, sendo guiados por
+visões dos fragmentos do espelho celestial, caçados pelo Império e testados pelas forças
+do passado. Que tipo de semideus você vai ser?
+Página 2 de 37
+--- NOVA PAGINA ---
+2. CRIAÇÃO DE PERSONAGENS
+Durante a criação de personagens no sistema Telumak, a definição dos atributos é o
+principal fator que determina o desempenho, os pontos fortes e as limitações do
+personagem em todos os aspectos do jogo. Ao iniciar a ficha, o jogador recebe 60 pontos
+para distribuir entre quatro atributos principais: Físico, Destreza, Cognição e Carisma. A
+alocação desses pontos deve ser feita de acordo com a proposta, a função e o conceito do
+personagem, já que cada atributo influencia diretamente diferentes tipos de teste,
+resistência e habilidades.
+No momento da criação, existe uma limitação importante: nenhum atributo pode receber
+menos de 4 pontos ou mais de 24 pontos. Esse intervalo impede a construção de
+personagens totalmente desequilibrados, forçando uma distribuição mínima em áreas
+secundárias e evitando a criação de especialistas extremos logo no início do jogo. Por
+exemplo, um personagem pode escolher focar seus pontos em Físico para atuar como
+combatente ou tanque, mas mesmo assim será obrigado a investir pelo menos 4 pontos
+em Destreza, Cognição e Carisma, mantendo uma base mínima de competência em todas
+as áreas.
+Conforme o personagem avança de nível, ele recebe 6 pontos adicionais por nível para
+distribuir livremente entre os quatro atributos. Isso significa que um personagem de nível
+1 terá 66 pontos para distribuir, nível 2 terá 72 pontos, e assim por diante, até atingir o
+nível 7, quando terá um total de 102 pontos. Esses pontos de evolução servem para
+especializar ainda mais o personagem em sua área de atuação ou para compensar
+fraquezas e tornar o personagem mais versátil. Ao subir de nível, o jogador pode investir
+nos novos pontos onde for mais necessário, de acordo com os desafios e mudanças
+narrativas da campanha.
+3. ATRIBUTOS
+Físico é o atributo que representa a força bruta, o vigor corporal, a resistência física e a
+capacidade de suportar dano. Pontuações elevadas em Físico garantem maior sucesso em
+testes que envolvem levantar peso, resistir a venenos, suportar fadiga, absorver danos em
+combate, nadar, correr e executar tarefas de grande esforço físico. Além disso, Físico
+influencia diretamente a quantidade de pontos de resistência (a “vida” do personagem),
+bem como o limite de equipamentos e armas que ele pode portar. Investir nesse atributo é
+crucial para personagens cuja função envolve confrontos diretos, proteção do grupo ou
+tarefas que exigem robustez física.
+Página 3 de 37
+--- NOVA PAGINA ---
+Destreza determina a agilidade, os reflexos, a coordenação motora, o equilíbrio e a
+capacidade de realizar movimentos delicados e precisos. Um personagem com alta
+Destreza terá vantagens em testes de esquiva, acrobacias, ataques à distância, furtividade,
+abertura de fechaduras, manipulação de objetos pequenos e qualquer situação que
+dependa de rapidez ou precisão. Além disso, a Destreza influencia o deslocamento do
+personagem em combate, permitindo cobrir maiores distâncias por rodada. Esse atributo
+é fundamental para quem deseja atuar como arqueiro, ladrão, assassino, explorador,
+artista marcial ou qualquer papel em que a evasão e a movimentação sejam constantes.
+Cognição abrange inteligência, raciocínio lógico, percepção, memória, conhecimento e a
+capacidade de analisar situações ou utilizar poderes místicos. Uma alta Cognição garante
+melhores resultados em testes de detecção de armadilhas, decifração de enigmas, análise
+de pistas, identificação de mentiras, uso de magia ou habilidades sobrenaturais,
+planejamento tático e realização de diagnósticos. Personagens que pretendem atuar como
+líderes estratégicos, magos, investigadores, sábios, conselheiros ou especialistas em
+situações que exigem leitura do ambiente dependem diretamente desse atributo. Cognição
+também pode afetar o alcance de habilidades místicas e o desempenho em tarefas
+intelectuais complexas.
+Carisma representa a capacidade de influenciar, inspirar, manipular ou compreender
+outras pessoas. Um personagem carismático será mais eficiente em negociações,
+liderança, diplomacia, blefes, atuação, persuasão, intimidação, consolo ou manipulação
+social em geral. Carisma influencia diretamente o número de pontos de energia espiritual,
+essencial para interações com forças divinas, realização de rituais e manutenção de
+vínculos sociais ou sobrenaturais. Personagens voltados para o papel de diplomata, líder
+de grupo, sacerdote, ator, manipulador ou qualquer função baseada em relações
+interpessoais devem priorizar esse atributo.
+Arkhan é um atributo especial que representa o poder espiritual, a afinidade mística e o
+potencial sobrenatural do personagem. Ele é diferente dos outros atributos básicos porque
+não mede capacidades físicas, sociais ou cognitivas comuns, mas sim a ligação direta do
+personagem com energias sobrenaturais, magia, bênçãos divinas, poderes ancestrais ou
+manifestações espirituais. Arkhan define a intensidade e o alcance de poderes mágicos,
+rituais, canalização de energia espiritual, manipulação de forças sobrenaturais, contato
+com entidades, resistência a efeitos mágicos e a capacidade de influenciar o mundo além
+da matéria. Esse atributo é essencial para personagens que desejam usar habilidades
+místicas, realizar magias ou se envolver em interações com deuses, espíritos, entidades
+cósmicas e outros elementos fantásticos do cenário. O atributo Arkhan possui valor
+fixo e não é possível distribuir pontos nele. O jogador começa o jogo no nível 0, onde
+o seu valor base se inicia em 15, recebendo mais 5 para cada novo nível.
+Página 4 de 37
+--- NOVA PAGINA ---
+4. DOMÍNIOS E FRAQUEZAS
+No sistema Telumak, os conceitos de Domínios e Fraquezas funcionam como
+moduladores fundamentais das capacidades e vulnerabilidades do personagem, afetando
+diretamente as mecânicas de testes e os resultados das ações no jogo. Ambos servem para
+individualizar o personagem, direcionar seus pontos fortes e fracos e enriquecer a
+experiência narrativa, tornando cada ficha única e mais próxima do conceito criado pelo
+jogador.
+4.1. DOMÍNIOS
+Os Domínios representam áreas de excelência, especialização ou vocação do
+personagem. Um domínio é escolhido com base no histórico, treinamento, linhagem,
+talento natural ou experiência prática do personagem em determinado campo de atuação.
+Sempre que o personagem realiza um teste relacionado diretamente ao seu domínio, ele
+recebe um bônus de +3 pontos ao valor do atributo aplicado naquele teste.
+Por exemplo, se um personagem possui o domínio Kenjutsu (luta
+com espada), ele receberá +3 em todos os testes de Físico
+relacionados a combates usando katana ou técnicas de esgrima.
+Da mesma forma, alguém com o domínio Diplomacia (ligado a
+Carisma) será beneficiado em negociações, resolução de conflitos
+ou discursos persuasivos. Um domínio de Estratégia (Cognição)
+ajuda em testes de análise tática, planejamento militar, jogos
+mentais e avaliações rápidas de campo de batalha. Já o domínio
+de Furtividade (Destreza) concede vantagem em situações que
+exigem movimento silencioso, disfarce, evasão de vigilância e
+infiltração.
+O jogador pode escolher até 6 domínios diferentes para um personagem ao longo da sua
+evolução. Esses domínios devem ser bem delimitados, não podem ser excessivamente
+amplos (“Combate”, por exemplo, seria genérico demais) e precisam ter aplicação prática
+clara para facilitar a adjudicação dos bônus durante o jogo. A escolha dos domínios
+reflete o “caminho” do personagem e determina em que situações ele será realmente
+excepcional. Domínios são um dos principais mecanismos de diferenciação de
+personagens em Telumak. Dois personagens com atributos idênticos podem ter
+desempenhos completamente distintos graças à seleção de domínios diferentes. Eles
+incentivam a especialização e o protagonismo do personagem em seu campo, além de
+servirem como referência narrativa para as cenas em que ele brilha ou faz diferença no
+grupo.
+Página 5 de 37
+--- NOVA PAGINA ---
+4.2. FRAQUEZAS
+As Fraquezas são limitações, pontos cegos, traumas, falhas de caráter, bloqueios físicos
+ou sociais que afetam negativamente o desempenho do personagem em certas situações.
+Toda vez que um teste recai sobre uma situação coberta por uma das fraquezas do
+personagem, ele sofre uma penalidade de -4 no valor do atributo usado no teste.
+Fraquezas são limitadas a um máximo de 3 por personagem, mas sua presença é
+obrigatória para dar profundidade e equilíbrio à ficha, já que um personagem sem
+vulnerabilidades se torna previsível e monótono. Fraquezas podem ter origem em traumas
+do passado, preconceitos, limitações físicas, desinformação, medos, vícios ou questões
+emocionais. Elas podem ser exploradas pelo mestre tanto para criar obstáculos e tensões
+quanto para proporcionar oportunidades de desenvolvimento e superação do personagem.
+Por exemplo, um personagem com Fobia de altura sofrerá a
+penalidade em testes de Destreza realizados em locais elevados ou
+situações de risco de queda. Orgulho excessivo pode prejudicar
+testes de Carisma ao exigir colaboração ou humildade, resultando
+em fracassos em negociações, mediações ou pedidos de ajuda.
+Ingenuidade política pode gerar problemas em testes de Cognição
+quando o personagem tenta entender intrigas, alianças ou
+manipulações de poder.
+É fundamental que as fraquezas escolhidas sejam relevantes e tenham aplicação clara em
+jogo, permitindo ao mestre explorar seus efeitos de forma justa, e ao jogador, a
+oportunidade de interpretar os impactos dessas limitações na jornada do personagem.
+5. MARCADORES E RECURSOS
+No sistema Telumak, além dos atributos principais, cada personagem possui marcadores
+e recursos derivados dos seus atributos, que afetam diretamente sua capacidade de
+sobrevivência, mobilidade, poder espiritual e protagonismo em cenas decisivas.
+Compreender como cada recurso funciona e como ele se relaciona com os atributos é
+fundamental para otimizar a construção da ficha, administrar riscos e planejar estratégias
+tanto em combate quanto fora dele.
+5.1. PONTOS DE RESISTÊNCIA E SAÚDE
+Pontos de Resistência (Vida/Health) são o principal indicativo da capacidade do
+personagem de suportar dano físico, fadiga, ferimentos e situações de risco vital. Cada
+personagem começa com 2 pontos de Resistência e adiciona 1 ponto extra para cada 10
+pontos completos em Físico.
+Página 6 de 37
+--- NOVA PAGINA ---
+Por exemplo, um personagem com 20 de Físico terá 2 (base) + 2
+(de Físico) = 4 pontos de Resistência.
+2 Pontos de Teikö: você tem saúde baixa.
+3-4 Pontos de Teikö: você tem saúde na média ou comum (combatente).
+5-6 Pontos de Teikö: você tem saúde elevada.
+7-8 Pontos de Teikö: você tem saúde alta.
+9-10 Pontos de Teikö: você tem saúde sobrenatural.
+10 ou + Pontos de Teikö: você tem saúde semi-divina (para a raça Kai).
+Quando os Pontos de Resistência chegam a zero, o personagem entra em risco iminente
+de morte, podendo desmaiar, sofrer consequências severas ou morrer, dependendo das
+circunstâncias e das decisões do mestre. Portanto, Físico é o atributo determinante para a
+longevidade do personagem, tornando-se essencial para guerreiros, guardiões, tanques ou
+qualquer função que se exponha frequentemente ao perigo físico.
+5.2. PONTOS DE ENERGIA (REIKI)
+Pontos de Energia (Espiritual) medem a afinidade do personagem com o mundo
+espiritual, sua empatia com forças divinas, capacidade de canalizar poderes místicos,
+realizar rituais ou resistir a ataques sobrenaturais. Todo personagem tem 1 ponto base de
+Energia e soma 1 ponto extra para cada 10 pontos completos em Carisma.
+Assim, um personagem com 16 de Carisma teria 1 (base) + 1 (de
+Carisma) = 2 pontos de Energia.
+1 Pontos de Reiki: você tem quantidade de energia baixa.
+2 Pontos de Reiki: você tem quantidade de energia na média ou comum (combatente).
+3-4 Pontos de Reiki: você tem quantidade de energia elevada.
+5 Pontos de Reiki: você tem quantidade de energia alta.
+6-7 Pontos de Reiki: Sua energia é sobrenaturalmente alta e, às vezes, libera Reisenki.
+8 ou + Pontos de Reiki: Sua energia libera Reisënki naturalmente (semi-divino).
+Esses pontos podem ser gastos para ativar habilidades especiais, utilizar poderes, invocar
+bênçãos ou resistir a efeitos que afetam a alma, emoções ou espírito. O Carisma, nesse
+contexto, é muito mais do que aparência ou lábia: é a medida prática da sintonia
+espiritual, sendo indispensável para sacerdotes, xamãs, líderes espirituais e personagens
+que desejam interagir com o sobrenatural.
+Página 7 de 37
+--- NOVA PAGINA ---
+5.3. PONTOS DE DESTINO (SORTE)
+Pontos de Destino representam momentos em que o personagem é agraciado pela sorte,
+intervenção divina ou vontade cósmica. Cada personagem começa com 1 ponto de
+Destino, recebendo mais 1 para cada 10 pontos completos de Arkhan.
+Por exemplo, um personagem com 25 de Arkhan teria 1 (base) + 2
+(de Arkhan) = 3 pontos de Destino.
+1 Pontos de Fortuna: você tem um item relevante que lhe dá sorte.
+2 Pontos de Fortuna: você tem um item poderoso que lhe dá sorte.
+3-4 Pontos de Ida, de Hänn ou Dränn: você tem poder ancestral baixo.
+5-6 Pontos de Ida, de Hänn ou Dränn: você tem poder ancestral médio.
+7-8 Pontos de Ida, de Hänn ou Dränn: você tem poder ancestral alto.
+9 ou + Pontos de Ida, de Hänn ou Dränn: você tem poder ancestral semi-divino.
+Esses pontos podem ser usados para re-rolar um teste de combate fracassado, garantir
+sucesso automático em uma ação simples, aumentar o dano ou a resistência em um
+momento crucial, ou até escapar de situações mortais. Os Pontos de Destino são
+extremamente valiosos e devem ser usados com sabedoria, pois podem alterar
+drasticamente o curso da narrativa. Arkhan, portanto, é o atributo-chave para jogadores
+que desejam controlar o próprio destino ou realizar feitos extraordinários em
+situações-limite, sendo fundamental para magos, semideuses, heróis escolhidos e
+personagens de linhagem sobrenatural.
+5.4. PONTOS DE ARMAMENTO
+Pontos de Armamento determinam quantas armas, armaduras ou utilitários o personagem
+pode carregar sem sofrer penalidades. Todo personagem começa com 1 ponto de
+Armamento, ganhando +1 para cada 10 pontos completos em Físico.
+Isso significa que um personagem com 18 de Físico teria 1 (base)
++ 1 (de Físico) = 2 pontos de Armamento. Armas e armaduras têm
+peso mínimo 1 e máximo 3. Utilitários pequenos, como shurikens
+ou kunais, podem ser agrupados para compor 1 ponto de peso.
+1 Pontos de Armamento: você é magro.
+2 Pontos de Armamento: você tem físico comum e esbelto (combatente).
+3-4 Pontos de Armamento: você é atlético, ou levemente musculoso.
+5 Pontos de Armamento: você tem físico forte e viril, com ombros largos.
+6-7 Pontos de Armamento: você tem físico forte e robusto, discrepante aos demais.
+8 ou + Pontos de Armamento: você tem físico e feitos sobrenaturais (semi-divinos).
+Página 8 de 37
+--- NOVA PAGINA ---
+Esse recurso limita o excesso de equipamento e exige escolhas táticas: priorizar proteção,
+variedade de armas ou ferramentas especializadas. Físico, nesse contexto, reflete força,
+robustez e resistência muscular, características indispensáveis para guerreiros, caçadores
+e aventureiros que atuam em ambientes hostis ou campanhas de longa duração.
+5.5. PONTOS DE MOVIMENTO
+Pontos de Movimento definem o quanto o personagem pode se deslocar por rodada de
+ação em situações de combate, perseguição ou fuga. O cálculo é simples: 1 ponto base de
+Movimento, com acréscimo de +1 para cada 10 pontos completos em Destreza.
+Cada ponto equivale a 5 metros por ação. Assim, um personagem
+com 23 de Destreza teria 1 (base) + 2 (de Destreza) = 3 pontos de
+Movimento, podendo deslocar até 15 metros em uma única ação.
+1 Pontos de Movimento: você é lento.
+2 Pontos de Movimento: você tem velocidade baixa ou regular.
+3-4 Pontos de Movimento: Você tem reflexos acima da média e avanços rápidos.
+5 Pontos de Movimento: você é naturalmente muito rápido.
+6-7 Pontos de Movimento: você é sobrenaturalmente rápido e deixa vultos para trás.
+8 ou + Pontos de Movimento: você parece desaparecer quando se move (semi-divinos).
+Esse recurso é crítico para personagens que dependem de velocidade, reposicionamento
+ou ataques à distância, além de ser vital em combates dinâmicos, fugas e perseguições.
+Destreza, portanto, se reflete diretamente na mobilidade e na capacidade do personagem
+de atuar em cenários táticos e rapidamente mudar a situação a seu favor.
+EXEMPLO: Imagine um personagem com 20 pontos
+em todos os atributos, seus cálculos de marcadores
+ficam da seguinte forma:
+Recurso 	Base 	Incremento por
+Atributo
+Atributo
+Relevante
+Exemplo
+(Atributo 20)
+Resistência (Vida) 	2 	+1 a cada 10 Físico 	Físico 	2 + 2 = 4
+Energia (Espiritual) 	1 	+1 a cada 10 Carisma 	Carisma 	1 + 2 = 3
+Destino (Sorte) 	1 	+1 a cada 10 Arkhan 	Arkhan 	1 + 2 = 3
+Armamento 	1 	+1 a cada 10 Físico 	Físico 	1 + 2 = 3
+Movimento (metros) 1 	+1 a cada 10 Destreza 	Destreza 	1 + 2 = 3 (15 metros)
+Página 9 de 37
+--- NOVA PAGINA ---
+5.6. BENEFÍCIOS AVANÇADOS POR ATRIBUTO
+Além dos recursos derivados dos atributos principais, personagens podem acessar
+ferramentas táticas especiais quando atingem patamares elevados de desenvolvimento. A
+cada 20 pontos completos em um atributo (Físico, Destreza, Cognição ou Carisma), o
+personagem pode utilizar por dia, uma ferramenta avançada à sua escolha. Estas
+ferramentas representam feitos extraordinários ou técnicas refinadas possíveis apenas
+para personagens de alto nível, refletindo seu domínio sobre aspectos físicos, mentais ou
+sociais.
+5.6.1. FERRAMENTAS AVANÇADAS POR ATRIBUTO
+FÍSICO
+● ESMAGAR: Ao atacar em batalha, desde que acerte o inimigo, o personagem
+pode aplicar um golpe devastador. Se obtiver sucesso, o dano causado é
+aumentado em +2 PONTOS DE DANO.
+● RESISTIR: Ao ser alvo de um ataque em batalha, ainda que falhe, o personagem
+pode tentar receber o mínimo possível. Recebe +2 PONTOS DE REDUTOR
+para absorver ou mitigar o dano daquele ataque específico.
+DESTREZA
+● ATACAR: O personagem pode realizar dois ataques sequenciais contra o
+mesmo inimigo (executando um novo ataque imediatamente após o primeiro).
+Alternativamente, se houver múltiplos inimigos, pode atacar um grupo adicional,
+desde que a quantidade total de alvos não ultrapasse o dobro de seus pontos de
+movimento.
+● EVADIR: Ao ser cercado ou atacado, o personagem pode incluir o inimigo
+atacante na ação de evasão, escapando do cerco ou de (1) ataque de oportunidade.
+No teste de EVASÃO, o jogador recebe bônus de +3d10.
+COGNIÇÃO
+● PREVER: Permite ao personagem reagir a ataques furtivos ou emboscadas. Em
+caso de sucesso no teste de PERCEPÇÃO, o usuário realiza um contra-ataque
+imediato ao perceber a intenção do inimigo. Ao se concentrar para PREVER, o
+jogador recebe bônus de +3d10, em caso de impossibilidade, recebe +1
+RAISE.
+Página 10 de 37
+--- NOVA PAGINA ---
+● CONCENTRAR: Permite canalizar magia, ataques à distância ou identificar
+brechas nos movimentos do oponente e concentrar seus ataques de maneira mais
+eficaz. É compatível com emboscada. Ao se CONCENTRAR, o jogador recebe
+bônus de +3d10 na rolagem, ou +1 RAISE.
+CARISMA
+● INTIMIDAR: Caso usado no turno de defesa, o personagem pode tentar
+intimidar o oponente com um teste de carisma. Em caso de sucesso, o inimigo fica
+paralisado e sofre um contra-ataque imediato do usuário. Caso usado no turno de
+ataque, o personagem pode paralisar o inimigo e seus companheiros, em caso de
+sucesso em teste de Carisma, acertará o inimigo pelo atrasado ou levemente
+paralisado. Ao se concentrar para INTIMIDAR, o jogador recebe bônus de
++3d10.
+● RECUPERAR: Durante seu turno de ataque, uma vez dia, o usuário abdica sua
+ação para recuperar fôlego e energia. Ao se concentrar para RECUPERAR, o
+jogador recebe +2 PONTOS DE ENERGIA e +1 PONTO DE DESTINO.
+5.6.2. 	REGRAS 	GERAIS PARA FERRAMENTAS
+AVANÇADAS
+Cada ferramenta só pode ser utilizada uma vez por luta para cada conjunto de 20 pontos
+completos no atributo correspondente. O jogador deve declarar qual ferramenta utilizará
+antes da resolução da ação. Personagens com 40, 60, 80+ pontos em um mesmo atributo
+adquirem usos adicionais dessas ferramentas (um uso extra por cada 20 pontos completos
+além dos primeiros 20). Os efeitos destas ferramentas não são cumulativos para múltiplos
+usos na mesma rodada.
+6. REGRAS DE TESTES E ROLAGENS
+No sistema Telumak, além dos atributos principais, cada personagem possui marcadores
+e recursos derivados dos seus atributos, que afetam diretamente sua capacidade de
+sobrevivência, mobilidade, poder espiritual e protagonismo em cenas decisivas.
+Compreender como cada recurso funciona e como ele se relaciona com os atributos é
+fundamental para otimizar a construção da ficha, administrar riscos e planejar estratégias
+tanto em combate quanto fora dele.
+Página 11 de 37
+--- NOVA PAGINA ---
+6.1. TESTES DE AÇÃO
+Os Testes de Ação são utilizados sempre que um personagem tenta realizar uma tarefa
+em que há possibilidade de falha — seja escalar uma parede, decifrar um enigma,
+convencer um NPC, desarmar uma armadilha ou realizar um feito mágico. O
+procedimento básico é:
+● O jogador rola 4 dados de 10 faces (4d10).
+● Soma todos os resultados dos dados.
+● Compara o total com o atributo pertinente, após aplicar eventuais modificadores
+de Domínios ou Fraquezas.
+Exemplo de cálculo: Se um personagem tem Destreza 16 e rola 4d10, para obter sucesso
+ele precisa que a soma dos dados seja igual ou inferior a 16. Se possuir o Domínio
+relevante (ex: Furtividade), ele soma +3 ao valor do atributo naquele teste, aumentando o
+limite para 19. Se tiver uma fraqueza aplicável (ex: Fobia de altura, em um teste de
+equilíbrio em um penhasco), ele subtrai -4, reduzindo o limite para 12.
+6.2. TESTES DE COMBATE
+Os Testes de Combate são usados quando há confronto direto, seja em duelos corpo a
+corpo, ataques à distância, defesa contra emboscadas ou qualquer situação onde
+personagens ou NPCs disputam o resultado.
+● 	O personagem usa o atributo correspondente (geralmente
+Físico para corpo a corpo, Destreza para ataques à distância,
+Cognição para estratégias místicas ou Carisma para ataques
+sociais).
+● 	Adiciona o bônus de Domínio (+3) se possuir
+especialização pertinente (ex: Kenjutsu, Tiro com Arco,
+Intimidação).
+● 	O jogador rola 1d10 para o teste de combate, e pode
+acrescentar +1d10 para cada 10 pontos completos no
+atributo base. Por exemplo, Físico 20 permite rolar 3d10 (1
+base + 2 adicionais).
+● 	Soma o valor do atributo, do Domínio (se houver), e o
+maior resultado obtido nos dados.
+Disputa de Combate: O adversário realiza o mesmo procedimento. Quem obtiver o
+maior total vence o confronto naquela rodada ou ação. Vantagem (RAISE): Para cada 10
+pontos que o vencedor superar o adversário, ele conquista uma vantagem extra, chamada
+de RAISE, que pode significar dano adicional, desarme, empurrar o inimigo, impedir
+reação, entre outros efeitos definidos pelo mestre ou pelo sistema. Bônus e Penalidades:
+Página 12 de 37
+--- NOVA PAGINA ---
+● 	Se o personagem estiver em uma situação coberta por um
+Domínio, recebe +3 ao valor do atributo no cálculo do teste.
+● 	Se a situação envolver uma Fraqueza, sofre uma
+penalidade de -4 ao atributo.
+Um personagem com Físico 18, Domínio em Luta de Lança (+3), enfrenta um inimigo
+em combate corpo a corpo. Ele rola 2d10 (1 base +1 por ter 18 em Físico), soma o maior
+valor obtido dos dados ao seu atributo (18+3=21) e compara com o resultado do
+adversário. Interpretação dos Resultados:
+● 	Sucesso Crítico: Se o resultado da soma dos dados for 9 ou
+menos, o personagem não só realiza a ação, mas ainda
+obtém uma vantagem adicional — descobrindo algo extra,
+agindo com velocidade notável, impressionando
+espectadores, etc.
+● 	Sucesso Simples: Se o resultado estiver entre 10 e o valor
+do atributo (considerando modificadores), a ação é
+bem-sucedida de acordo com a intenção.
+● 	Falha: Se o resultado for maior que o valor do atributo,
+mas menor que 31, o personagem falha ou obtém apenas
+um resultado parcial — pode ser necessário pagar um custo,
+sofrer uma complicação ou enfrentar uma consequência
+leve.
+● 	Falha Crítica: Se o resultado for 31 ou mais, a ação falha
+de forma desastrosa, resultando em consequências graves
+como dano, exposição, agravamento do problema, perda de
+recursos ou impactos negativos no grupo.
+Quanto maior o atributo, maior o limite para o sucesso. Isso faz com que personagens
+especializados sejam mais confiáveis em suas áreas, enquanto personagens com valores
+baixos enfrentam riscos maiores.
+7. MECÂNICAS ESPECIAIS
+Durante o turno de combate de um personagem (ataque e defesa), ele pode realizar
+diferentes tipos de ações, cada uma dependendo diretamente de um atributo:
+● Ação de ataque corpo-a-corpo: Para atacar em combate físico direto, seja com
+armas brancas, socos, chutes ou técnicas de luta, o teste sempre utiliza o Físico.
+Um valor elevado em Físico aumenta a precisão, o dano potencial e a capacidade
+de romper defesas. Esse atributo é indispensável para guerreiros, samurais e
+Página 13 de 37
+--- NOVA PAGINA ---
+personagens frontais, pois determina seu sucesso e sua sobrevivência em
+confrontos diretos.
+● Ação de ataque à distância: Para utilizar arcos, bestas, arremessar armas ou
+atacar com qualquer ferramenta de longo alcance, o teste é feito com Destreza.
+Um valor alto em Destreza garante melhor pontaria, maior velocidade de disparo
+e eficiência em situações de emboscada. Esse atributo é vital para caçadores,
+arqueiros, assassinos e exploradores, especialmente em terrenos abertos ou
+combates que exigem mobilidade.
+● Ação Verbal ou Intimidação: Todas as tentativas de manipular, intimidar,
+enganar, inspirar aliados ou desmoralizar inimigos utilizam o Carisma. O sucesso
+nessas ações pode mudar o curso de um confronto, evitando lutas, recrutando
+aliados ou obtendo informações vitais. Carisma também é fundamental para
+sacerdotes, diplomatas, líderes e mestres de intriga. A Intimidação pode ser usada
+como um recurso de combate, uma vez por luta, para inibir o ataque de um
+inimigo, ou paralisá-lo (deixando-o vulnerável a ação do jogador).
+● Ação Estratégica | Tática | Mística: Para tarefas como perceber padrões, bolar
+armadilhas, criar planos de combate, analisar fraquezas do inimigo ou manipular
+energias mágicas, o teste utiliza Cognição. Um personagem com alta cognição é
+essencial em grupos que valorizam estratégia, magia, antecipação de armadilhas e
+leitura de campo de batalha.
+● Esquiva: Sempre que um personagem tenta evitar um ataque ou escapar de uma
+armadilha, realiza um teste de Destreza. Ter alta destreza permite evitar golpes,
+fugir de perigos e sobreviver mesmo em situações de desvantagem física.
+● Bloqueio: Para resistir fisicamente a um ataque (com escudos, armas ou pura
+força), o teste é feito com Físico. Quanto maior o Físico, maior a chance de
+proteger-se completamente ou minimizar o dano.
+● Reposicionar-se (ação menor): O personagem pode mover-se até 3 metros sem
+gastar seu turno principal, ou deslocar-se 5 metros para cada ponto de movimento
+disponível, conforme determinado pelo valor de Destreza. Movimentação tática é
+essencial para fugir, buscar cobertura, flanquear inimigos ou alcançar objetivos
+rapidamente.
+● Mudança de postura ou Ação menor: Mudanças rápidas de atitude (adotar uma
+postura defensiva, ofensiva ou emitir um grito de alerta) são consideradas ações
+menores e normalmente não consomem todo o turno. O bom uso dessas mudanças
+pode alterar o ritmo do combate, proteger aliados ou impedir emboscadas.
+Página 14 de 37
+--- NOVA PAGINA ---
+7.1. EMBOSCADA E ARMADILHA
+A criação e execução de emboscadas e armadilhas exige testes baseados na situação:
+geralmente Destreza para armar ou posicionar, Cognição para planejar ou perceber, e, em
+alguns casos, Físico para manipular objetos pesados. O sucesso em uma emboscada ou
+armadilha geralmente garante bônus de DANO +1 na AÇÃO, ou impõe uma condição
+negativa ao inimigo caso ele falhe na resistência.
+7.2. ALCANCE E MOVIMENTO
+O sistema de alcance é baseado nos pontos de movimento do personagem, derivados
+diretamente da Destreza. Cada ponto de movimento equivale a 5 metros que o
+personagem pode percorrer por ação em combate. Isso significa que personagens com
+alta Destreza conseguem cobrir distâncias maiores, reposicionar-se melhor, escapar de
+ameaças e explorar mais rapidamente.
+● 	ALCANCE CURTO: Toda ação feita a até 5 metros de
+distância é considerada de alcance comum e não sofre
+modificadores.
+● 	ALCANCE MÉDIO: Para ataques ou arremessos,
+utiliza-se Cognição para calcular a precisão em média
+distância (cada ponto equivale a 5 metros). Para
+movimentação pura, é Destreza que define o alcance.
+● 	ALCANCE LONGO: Calcula-se dobrando o valor do
+alcance médio, útil para snipers, magos ou lançadores de
+projéteis que atuam em grandes campos de batalha.
+7.3. PESO DE ARMAMENTOS E ITENS
+O gerenciamento de equipamentos segue uma regra simples, mas estratégica:
+● 	Armas e armaduras têm peso mínimo de 1 e máximo de 3.
+● 	Cada personagem pode carregar um número de armamentos
+determinado por seus pontos de armamento (1 base +1 por
+cada 10 pontos de Físico).
+● 	Itens utilitários (como shurikens, kunais, granadas, cordas,
+etc.) podem ser agrupados: por exemplo, até 3 shuriken e 2
+kunai contam como peso 1.
+Página 15 de 37
+--- NOVA PAGINA ---
+● 	Itens com uso limitado devem ser monitorados
+individualmente: shurikens são de uso único; kunais
+quebram após 3 usos.
+Esse sistema reforça o papel do atributo Físico, pois personagens mais fortes podem
+portar mais equipamentos, ampliando suas opções em combate e situações táticas. A
+escolha de equipamentos deve considerar não só a preferência pessoal, mas também o
+peso, a função no grupo e as possíveis restrições de movimento.
+7.4. ATUAÇÃO EM EQUIPE (TEAM PLAY)
+No Sistema Telumak, algumas situações exigem que personagens atuem em conjunto
+com NPCs aliados (ou entre múltiplos NPCs), formando equipes para tarefas de combate,
+infiltração, defesa, rituais ou outras atividades táticas. Este sistema permite simular de
+maneira eficiente e equilibrada a sinergia entre aliados e suas contribuições práticas para
+o sucesso das ações coletivas.
+Limite de Equipe: Cada equipe pode ter, no máximo, três indivíduos ativos (jogador +
+até 2 aliados/NPCs) contribuindo no mesmo teste ou ação. Caso o grupo seja maior,
+apenas os três mais relevantes ou capacitados devem ser considerados para efeitos de
+bônus.
+Requisitos: Só concedem bônus NPCs ou personagens com treinamento, experiência ou
+função relevante para a atividade executada. NPCs desqualificados, distraídos,
+inconscientes ou engajados em outra tarefa não podem contribuir.
+7.4.1. Bônus em Testes de Combate em Equipe
+Sempre que um personagem realiza um teste de combate (ataque, defesa ou resistência)
+com apoio de aliados, aplica-se o seguinte:
+● Bônus de Atributo: Cada aliado participante concede +1 ponto adicional para
+cada 10 pontos completos que possuir nesse atributo.
+Exemplo: NPC com Físico 23 concede +2
+ao valor do atributo do personagem
+principal (+2 por cada 10 pontos de
+atributo).
+● Dados Extras por Nível: O aliado concede +1d10 para cada 10 pontos possuídos
+no atributo pretendido rolagem do teste de combate (porém, o bônus total está
+limitado ao nível do personagem aliado). O personagem realiza sua rolagem
+Página 16 de 37
+--- NOVA PAGINA ---
+normal e adiciona bônus + dados extras dos aliados, considerando o maior
+resultado.
+Exemplo: NPC de nível 2, com 30 pontos em atributo, concede 3+2d10 extras;
+NPC de nível 1, com 30 pontos em atributo, concede 3+1d10.
+● Limite Máximo: Em equipes, nunca considere mais de três participantes ao
+mesmo tempo.
+EXEMPLO DE COMBATE EM EQUIPE
+Um personagem com Físico 18 recebe apoio de dois NPCs:
+NPC 1: Físico 20, Nível 2 → +3 no atributo e +4d10 na rolagem
+NPC 2: Físico 14, Nível 1 → +2 no atributo e +2d10 na rolagem
+Resultado: O personagem soma +5 ao seu Físico e lança sua rolagem de
+combate normal, adicionando +6d10 extras. O maior resultado entre todos
+os dados é considerado para definir o sucesso do teste, conforme as regras
+normais de combate do sistema.
+7.4.2. Aplicação da Equipe Fora do Combate
+O mesmo princípio pode ser aplicado, com ajustes, para testes cooperativos em outras
+áreas (furtividade, rituais, debates, tarefas de grupo, etc.), desde que os aliados tenham
+competência (domínio) na tarefa e que o atributo relevante seja identificado pelo mestre.
+Nestes casos, os NPCs podem conceder bônus de até 1d10 para o jogador.
+Restrições e Equilíbrio
+- O mesmo NPC não pode conceder bônus múltiplos para a mesma rolagem.
+- Aliados incapacitados, em outras tarefas ou ausentes não contribuem.
+- O mestre pode vetar bônus se a participação do NPC não for justificável,
+mantendo o equilíbrio e a verossimilhança da cena.
+8. EVOLUÇÃO DE PERSONAGEM
+No sistema Telumak, o processo de evolução do personagem é estruturado para refletir o
+crescimento gradual de suas capacidades e a especialização de suas habilidades ao longo
+da campanha. Toda vez que o personagem sobe de nível, ele recebe 6 pontos
+adicionais para distribuir entre os quatro atributos principais: Físico, Destreza,
+Página 17 de 37
+--- NOVA PAGINA ---
+Cognição e Carisma. Essa distribuição é livre e pode ser feita de acordo com os desafios
+encontrados pelo personagem, sua função no grupo, ou os rumos que a narrativa toma.
+A escolha de como alocar esses 6 pontos é fundamental para a construção de personagens
+eficientes e com identidade própria. Investir em Físico aumentará não apenas a força e
+resistência, mas também os pontos de resistência (vida) e a capacidade de carregar
+armamentos, tornando o personagem mais apto a suportar danos e atuar na linha de
+frente. Aumentar a Destreza significa ampliar a mobilidade, capacidade de esquiva,
+alcance em combate e quantidade de metros percorridos por turno, sendo essencial para
+arqueiros, assassinos, exploradores e qualquer personagem que depende de agilidade e
+reação rápida. Priorizar Cognição beneficia personagens que dependem de raciocínio
+lógico, percepção, análise, uso de magias ou planejamento tático, aumentando sua
+eficácia em desvendar mistérios, detectar armadilhas e vencer em confrontos estratégicos.
+Já o aumento de Carisma aprimora todas as interações sociais, manipulação, diplomacia,
+persuasão, além de elevar os pontos de energia espiritual, requisito para sacerdotes,
+místicos e líderes naturais.
+Além dos pontos de atributo, a evolução permite que o personagem adquira novos
+domínios, até um máximo de seis ao longo de sua trajetória. Cada domínio representa
+uma área de especialização que concede bônus em testes pertinentes, o que faz com que a
+escolha dos domínios reflita não apenas os talentos técnicos do personagem, mas também
+sua história, experiências e o papel que ele busca desempenhar na trama. Por exemplo,
+um personagem que começa focado em combate pode, com o tempo, adquirir domínios
+em liderança ou estratégia, expandindo sua utilidade para além do campo de batalha.
+Do mesmo modo, o personagem pode adquirir novas fraquezas, até um máximo de
+três. Embora isso possa parecer uma limitação, escolher fraquezas relevantes não só
+equilibra as vantagens obtidas, mas também enriquece a narrativa, criando oportunidades
+para interpretação, superação e desenvolvimento dramático. Fraquezas obrigam o jogador
+a considerar as vulnerabilidades do personagem, incentivando abordagens alternativas e
+crescimento pessoal ao longo do tempo. É importante ressaltar que toda mudança nos
+atributos impacta diretamente os recursos derivados: pontos de resistência (vida),
+pontos de energia (espiritual), pontos de destino (sorte/destino), pontos de
+armamento (capacidade de carga) e pontos de movimento (mobilidade em metros
+por ação). Cada um desses marcadores aumenta automaticamente quando o personagem
+ultrapassa múltiplos de 10 no respectivo atributo. Por exemplo, ao elevar Físico de 19
+para 20, o personagem ganha um ponto adicional de resistência e armamento. Se
+Destreza sobe de 14 para 20 ao longo dos níveis, além de melhorar todas as rolagens
+ligadas à agilidade, aumenta também a distância que pode percorrer a cada rodada de
+combate.
+Página 18 de 37
+--- NOVA PAGINA ---
+Essa evolução escalonada garante que personagens veteranos sejam significativamente
+mais robustos, versáteis ou impactantes que personagens iniciantes, respeitando a
+progressão típica de uma campanha de fantasia épica. No entanto, a existência de limites
+máximos para domínios e fraquezas previne desequilíbrios extremos e obriga escolhas
+estratégicas: não é possível ser “bom em tudo” sem aceitar pontos cegos ou fraquezas
+reais.
+9. PENALIDADES
+10. ESTRUTURA DA FICHA
+A ficha do jogador se estrutura da seguinte forma:
+“Nome e Clã”
+Esse campo define o nome completo do personagem e sua linhagem familiar, seja ela
+nobre, comum, lendária ou misteriosa. O nome e o clã influenciam diretamente como o
+personagem é tratado por outros, especialmente em culturas onde a tradição e o sangue
+têm forte peso social. O clã pode conceder privilégios, rivalidades ou expectativas
+especiais, dependendo da campanha. Exemplo: “Fulano de Tal, Clã Tal”
+Página 19 de 37
+--- NOVA PAGINA ---
+“Ocupação/Profissão, Posição Social”
+Aqui se descrevem os ofícios, especializações, e a posição social do personagem.
+Exemplo: “Caçador e Pescador, Camponês” ou “Oficial Samurai, Aristocrata Menor”. A
+ocupação afeta o conhecimento técnico, habilidades iniciais e acesso a recursos. A
+posição social determina o status, o respeito recebido, acesso a círculos de poder, e
+influência econômica. “Exemplo: Caçador e Pescador, Camponês”.
+“Cidadania e Naturalidade”
+Esse campo define os lugares em que você será mais conhecido, que saberá melhor lidar
+com as pessoas e que terá maior afinidade com NPCs. Esse campo indica também a
+origem geográfica (vilarejo, cidade, província, região, reino) e o status de pertencimento
+(“Hakutaijin de Shirogane”, “Koteijin de Kakuzankyō”). Isso afeta sua rede de contatos,
+acesso a culturas locais, idioma, favores de NPCs e eventuais bônus de familiaridade em
+certas regiões. “Exemplo Hakutaijin de Shirogane”
+“Seguimento”
+Representa a postura de vida, filosofia pessoal ou alinhamento do personagem:
+“Rebelde”, “Disciplinado”, “Revolucionário Colonial” e “Patriota Imperial”. O
+seguimento pode influenciar suas decisões, alianças, métodos e até mesmo como é
+percebido em diferentes grupos sociais. Ele guia suas escolhas e a evolução narrativa,
+podendo abrir portas ou gerar conflitos conforme a história avança.
+Página 20 de 37
+--- NOVA PAGINA ---
+Página 21 de 37
+--- NOVA PAGINA ---
+MODELO DE FICHA
+Nome e Clã:
+Ocupação/Profissão, Posição Social:
+Cidadania e Naturalidade:
+Seguimento:
+Nível:
+FRAQUEZAS:
+FORÇA:
+DESTREZA:
+COGNIÇÃO:
+CARISMA:
+ARKHAN:
+DOMÍNIOS:
+RESISTÊNCIA (TEIKO):
+ENERGIA (REIKI):
+ARMAMENTO:
+DESTINO (FORTUNA):
+MOVIMENTO:
+ALCANCE:
+EQUIPAMENTO
+Ataque Armado
+Defesa Armada
+Combate Corpo a Corpo:
+Evasiva
+Intimidação (1 Uso/Por Inimigo)
+TÉCNICA
+TÉCNICA
+TÉCNICA
+Página 22 de 37
+--- NOVA PAGINA ---
+11. UNIDADES MONETÁRIAS
+Página 23 de 37
+--- NOVA PAGINA ---
+As unidades monetárias são as seguintes:
+● 1 Ryodō
+● 10 Ryōdō = 1 Ginryō
+● 10 Ginryō = 1 Kinryō
+Notas de Ambientação e Uso
+● Ryōdō: moeda do povo, comum em todo tipo de comércio cotidiano, pequenas
+compras, diárias de pousada, taxas de barco, refeições e gorjetas. Moeda de
+Bronze gravada com uma flor de cerejeira (pureza e renovação).
+● Ginryō: moeda “do clã”, usada em negociações maiores, salários de soldados,
+tributos regionais, contratos comerciais e aquisição de armas ou animais de carga.
+É uma moeda de prata gravada com dragão estilizado (força e proteção).
+● Kinryō: moeda da aristocracia e do Estado, raramente vista fora de transações
+políticas, compras de terras, manutenção de exércitos, financiamento de escolas,
+templos e operações secretas. É uma moeda de ouro gravada com o Sol Branco no
+reino de Hakutai Koku; ou com um lua circular no reino de Akatsukai Kokoku; ou
+com três círculos crescentes e sobrepostos, no reino de Sandai Kotei.
+Todas as moedas são forjadas e inspecionadas em Shirogane (Hakutai
+Koku), Shokijin (Akatsukai Kokoku) e Kakuzankyō (Sandai Kotei) por ferreiros
+imperiais sob rigorosos rituais e fortunas, o que dificulta severamente falsificações.
+MOEDA 	EQUIVALÊNCIA PRÁTICA
+1 Ryōdō 	1 refeição farta ou item comum de mercado
+2 Ryōdō 	Diária em uma pousada comum
+1 Ginryō 	1 barril de arroz, 1 caixa de sal, ou produto
+essencial de subsistência
+5 Ginryō 	Peça de armadura básica ou katana comum
+1 Kinryō 	Contrato de pequeno clã mercenário ou
+espada forjada em Shirogane
+5 Kinryō 	Suborno de um magistrado menor ou
+patrocínio de uma missão diplomática
+10+ Kinryō 	Aquisição de terras ou grandes investimentos
+em vilas/infraestrutura (ex: Mizukagami)
+Página 24 de 37
+--- NOVA PAGINA ---
+LISTA DE PREÇOS E EQUIVALÊNCIAS ECONÔMICAS
+ITENS E SERVIÇOS COMUNS
+● 1 Ryōdō — Refeição farta em taverna ou mercado
+● 1 Ryōdō — Mochila simples, cesto ou corda curta
+● 2 Ryōdō — Diária em pousada comum (quarto coletivo)
+● 2 Ryōdō — Roupa de algodão ou traje simples de aldeão
+● 3 Ryōdō — Lâmpada de óleo e provisão de óleo para 1 semana
+● 3 Ryōdō — Capa de chuva ou botas resistentes
+● 5 Ryōdō — Kit de pesca ou kit de ferramentas básico
+PRODUTOS DE SUBSISTÊNCIA
+● 1 Ginryō — Barril de arroz, saco de trigo ou caixa de sal
+● 2 Ginryō — Bode, porco ou animal pequeno de fazenda
+● 3 Ginryō — Carroça simples ou serviço de transporte de curta distância.
+● 5 Ginryō — Tecido de boa qualidade ou traje de artesão
+● 5 Ginryō — Serviço de curandeiro (tratamento básico)
+ARMAS E EQUIPAMENTOS
+● 5 Ginryō — Katana comum, naginata ou arco longo simples
+● 5 Ginryō — Armadura leve (couro, bambu)
+● 10 Ginryō — Armadura média (lamelar, reforçada)
+● 15 Ginryō — Arma de aço Shirogane ou armadura pesada básica
+● 30 Ginryō — Cavalo treinado de montaria
+ITENS ESPECIAIS E SERVIÇOS PROFISSIONAIS
+● 1 Kinryō — Espada forjada por mestres de Shirogane (espada de linhagem).
+● 2 Kinryō — Serviço de um guarda-costas samurai por 1 mês.
+● 3 Kinryō — Consultoria de um mago menor ou ritual espiritual.
+● 5 Kinryō — Suborno de magistrado menor ou influência sobre decisão de clã.
+● 10 Kinryō — Contrato de pequeno grupo mercenário ou licença de comércio.
+● 15 Kinryō — Financiamento de expedição a território selvagem.
+GRANDES INVESTIMENTOS E LUXOS
+● 10+ Kinryō — Aquisição de pequena terra rural ou reconstrução de uma casa de
+Família.
+● 20 Kinryō — Conjunto completo de armadura samurai personalizada
+● 25 Kinryō — Fundação de negócio próprio (pequena pousada, olaria, oficina)
+● 50 Kinryō — Patrocínio de missão diplomática, expedição imperial ou voto no
+conselho de província
+● 100+ Kinryō — Aquisição de vila menor, construção de templo ou influência
+sobre grandes decisões políticas
+Página 25 de 37
+--- NOVA PAGINA ---
+12. ESCALAS DE FORTUNAS
+A Escala de Fortunas entre os Comerciantes do Império segue conforme planilha abaixo:
+CATEGORIA 	RESERVAS
+LÍQUIDAS
+RENDA
+ANUAL
+PATRIMÔNIO /
+ATUAÇÃO
+PODER
+AQUISITIVO
+Pequeno
+Lojista 10–50 Ginryō 5–10 Ginryō
+Barraca 	de
+mercado, 	loja
+simples, estoque
+limitado
+Comprar carroça,
+pagar taxa de
+licença anual
+Comerciante
+Local 50–200
+Ginryō
+10–30 Ginryō
+Loja 	bem
+estabelecida,
+pequeno depósito,
+1–2 ajudantes
+Manter família,
+pagar impostos,
+financiar festa
+Comerciante
+Próspero 1–10 Kinryō 3–10 Kinryō
+Loja grande, filial
+em outra vila,
+estoque variado
+Comprar cavalo
+bom, contratar
+seguranças
+Comerciante
+Rico 20–100
+Kinryō
+10–30 Kinryō
+Casas/armazéns
+em 	cidades,
+caravanas,
+estoques valiosos
+Abrir novas filiais,
+investir em terras
+Magnata
+Mercantil 100–500
+Kinryō
+30–100
+Kinryō
+Rede de lojas,
+influência política,
+empréstimos a
+clãs.
+Patrocinar missão
+diplomática,
+influenciar leis
+Guilda ou
+Cartel Maior 500+ Kinryō 100+ Kinryō
+Várias cidades,
+navios próprios,
+monopólios
+regionais
+Financiar
+construção 	de
+templo, subornar
+magistrados,
+desafiar 	clãs
+menores
+Um Pequeno Lojista tem Poupança para uma emergência, mas não para grandes
+investimentos.
+Um Comerciante Local pode bancar um evento comunitário ou recuperar prejuízos de
+uma estação ruim. Já um Comerciante Próspero pode financiar pequenas caravanas ou
+abrir lojas em cidade vizinhas.
+Um Comerciante Rico, por exemplo, tem liquidez para manipular preços de mercado e
+negociar com a elite local. Já um Magnata Mercantil pode influenciar políticas, formar
+consórcios e competir com a baixa nobreza. A Guilda de Comércio, por fim, atua como
+uma potência econômica, rivalizando com grandes clãs em certos aspectos.
+Página 26 de 37
+--- NOVA PAGINA ---
+Seguem abaixo alguns exemplos para sobre fortunas comerciais e de Clãs.
+EXEMPLO DO PADRÃO DE VIDA PARA UM COMERCIANTE RICO
+● Reservas Líquidas: 20 a 100 Kinryō (ouro, prata, joias ou mercadorias de alto
+valor prontos para transação imediata)
+● Renda Anual: 10 a 30 Kinryō (lucro das caravanas, lojas, rotas comerciais, taxas
+de empréstimo, operações de importação/exportação e pequenas alianças
+comerciais)
+● Patrimônio Fixo: Casas e armazéns em pelo menos duas cidades ou vilas.
+Estoques de mercadorias valiosas (sedas, especiarias, ferro, pergaminhos, armas,
+chá, etc.) avaliados entre 10 e 50 Kinryō. Em alguns casos, participação societária
+em pequenas manufaturas, barcos, estábulos ou oficinas
+EXEMPLO DO PADRÃO DE VIDA PARA UM CLÃ MENOR
+● Reservas Líquidas: 50 a 200 Kinryō (em ouro ou equivalentes em prata/bronze).
+● Renda Anual: 20 a 50 Kinryō (proveniente de tributos de vilas, produção
+agrícola, pequenas minas, taxas de passagem, comércio regional)
+● Patrimônio Fixo: Terras (1 a 3 vilas rurais), sede fortificada/modesta, armazéns e
+estoque de alimentos, armas e utensílios avaliados em 20 a 100 Kinryō.
+Em regra, um clã menor que esteja bem estabelecido teria cerca de 100 Kinryō em
+reservas líquidas (ouro e prata de fácil acesso), podendo chegar a 200 Kinryō se for um
+clã particularmente próspero, veterano em conflitos ou com tradição de administração
+eficiente.
+Abaixo disso (menos de 50 Kinryō) o clã está em crise ou decadência; acima de 200
+Kinryō já está migrando para o status de clã médio ou relevante regionalmente.
+EXEMPLO DO PADRÃO DE VIDA PARA UM CLÃ ANCESTRAL
+● Reservas Líquidas: 500 a 1.000 Kinryō (ouro ou equivalentes em prata/bronze,
+com acesso imediato para uso em crises, guerras ou grandes investimentos)
+● Renda Anual: 200 a 250 Kinryō (arrecadados de impostos sobre vilas, cidades,
+comércio, portos, mineração, pedágios, colheitas e tributos de clãs menores
+aliados ou subordinados)
+● Patrimônio Fixo: Domínio de até 10 vilas e governança de uma cidade. Possui
+Castelos, fortalezas e templos próprios. Detém Armazéns estratégicos, celeiros,
+estaleiros, depósitos de armas, cavalos e navios avaliados entre 500 e 1.000
+Kinryō.
+Página 27 de 37
+--- NOVA PAGINA ---
+13. ARMAS E DISPOSITIVOS DE PESO 1
+CONJUNTO 1:
+- 3x Kunais (9 usos/total)., Causa Dano 1 de curto alcance (compatível com emboscada).
+Causa Dano 1 de longo alcance (compatível com Armadilha).
+CONJUNTO 2:
+- 9x Shurikens (9 usos/total)., Causa Dano 1 de longo médio (compatível com
+Armadilha). Podem ser arremessadas até duas por ataque.
+CONJUNTO 3:
+- 4x Venenos Atordoante (4 usos/total)., Causa penalidade - 2 em PRESTEZA ou
+FÍSICO, sendo consumido do dispositivo ou lâmina após o uso. (Acumulação máxima: 4
+frascos / penalidade -8). (Compatível com emboscada) (Compatível com armadilha)
+- 2x Venenos Letal (2 usos/total). Para cada dois usos (e acertos) causa DANO +1. Só
+pode ser aplicado em uma lâmina ou dispositivo por vez; e precisa ser uma lâmina
+virgem, sem outros venenos ou óleos.,
+- 1x Frascos de Antídoto (1 usototal). Imuniza contra os efeitos dos venenos anteriores.
+CONJUNTO 4: EXIGE DOMÍNIO DE KYUJUTSU
+- ARCO LONGO (uso indeterminado): Causa Dano 1 de longo alcance (compatível com
+emboscada).
+- 3x Flechas Longa (3 usos/total): Longo Alcance. podem atingir o inimigo no dobro do
+alcance de movimento.,
+- 2x Flechas Envenenadas (2 usos/total): Alcance Médio. Adversário atingido recebe
+penalidade de - 4 em testes de PRESTEZA por toda a luta (Acumulação máxima: 2).,
+- 4x Flechas Rápida (4 usos/total): Alcance Curto. Pode efetuar até dois disparos por
+vez, neste caso, causa DANO +1 (compatível com ARCO e EMBOSCADA).
+CONJUNTO 5:
+- ARMA NINJAKEN (uso indeterminado), Causa Dano 1 de alcance curto. Causa Dano
++1 em emboscada. (Compatível com Bônus de Emboscada)
+CONJUNTO 6:
+- 2x Bombas de Fumaça (2 usos/total): Criam uma densa névoa em área curta;
+concedem vantagem para fuga, emboscada ou ocultação por 1 rodada. Compatível com
+emboscada e fuga.
+- 4x Dardos de Bambu (4 usos/total): Dano 1 de curto alcance, silenciosos, podem ser
+embebidos em veneno. Podem ser lançados discretamente.
+Página 28 de 37
+--- NOVA PAGINA ---
+- 3x Tarjas Ofudas Adesivas (3 usos/total): Usadas para imobilizar pequenas
+engrenagens, prender/selar portas ou tampar bocas de frascos/vasos. Eficientes para
+sabotagem ou armadilhas rápidas.
+CONJUNTO 7:
+- 6x Agulhas de Arremesso (6 usos/total): Dano 1 de curto alcance, podem ser lançadas
+todas em um mesmo ataque para atingir múltiplos alvos (máx. 3 alvos). Compatível com
+emboscada ou distração.
+- 3x Esferas de Cal (3 usos/total): Ao colidir, liberam nuvem irritante que causa cegueira
+leve (-4 em testes de Destreza pela luta - não cumulativo). Eficaz contra múltiplos
+inimigos, ideal para cobertura e fuga.
+CONJUNTO 8:
+- 1x Corrente de Amarração (1 uso/total) Dispositivo reutilizável que prende e
+imobiliza um alvo (precisa de sucesso em teste de Destreza contra resistência).
+Compatível com emboscada e captura.
+- 8x Tachas de Ferro (8 usos/total): Espalhadas no solo, causam dano leve a quem
+atravessar descalço ou com calçados leves, retardando movimento em perseguições.
+Podem ser usadas em armadilhas ou para proteger retirada.
+CONJUNTO 9: EXIGE DOMÍNIO DE FURTIVIDADE E
+INFILTRAÇÃO
+- Lâmina Retrátil de Pulso (uso indeterminado): Dano 1 em curto alcance, permite
+ataque surpresa sem necessidade de sacar arma, quase invisível à observação casual.
+- 4x Doses de Veneno Silenciador (4 usos/total): Aplicados em lâminas ou dardos;
+vítima perde a voz por 2 Rodadas e sofre penalidade de -2 em testes de Carisma ou para
+pedir ajuda.
+- 5x Shurikens de Vidro Negro (5 usos/total): Dano 1 de médio alcance, praticamente
+invisíveis durante a noite, causam sangramento (Dano +1) se o alvo não for tratado em
+até 3 turnos (ou 1 rodada e meia). (compatível com emboscada).
+Página 29 de 37
+--- NOVA PAGINA ---
+14. ARMAS E DISPOSITIVOS DE PESO 2
+CONJUNTO 10: EXIGE DOMÍNIO DE KENJUTSU
+- ARMA KATANA (uso indeterminado), causa Dano 2 de alcance curto.
+- ARMA WAKIZASHI (uso indeterminado), causa RESISTÊNCIA +1 de alcance curto.
+- ARMA TANTÔ (uso indeterminado), causa DANO 1 de alcance curto (Compatível
+com Emboscada).
+CONJUNTO 10: EXIGE DOMÍNIO DE KENJUTSU
+- ARMA KATANA (uso indeterminado), causa Dano 2 de alcance curto.
+- ARMA KO-KATANA (uso indeterminado), causa RESISTÊNCIA +2 de alcance
+curto.
+CONJUNTO 11: EXIGE DOMÍNIO DE KENJUTSU
+- ARMA O-KATANA (uso indeterminado), causa Dano 2 de alcance 1.
+- ARMA YARI (uso indeterminado), causa DANO 2 de alcance médio, em até dois
+oponentes.
+CONJUNTO 12: EXIGE DOMÍNIO DE YARIJUTSU/SOJUTSU
+- ARMA NAGINATA (uso indeterminado), causa DANO 4 de alcance médio e curto,
+em até quatro oponentes.
+CONJUNTO 13: EXIGE DOMÍNIO DE KYUJUTSU
+- ARCO COMPOSTO (uso indeterminado): Causa DANO 2 de longo alcance,
+compatível com emboscada e ataques surpresa.
+5x FLECHAS PESADAS (5 usos/total): Alcance longo, causam DANO +1 contra
+armaduras ou estruturas leves.
+2x FLECHAS DE FOGO (2 usos/total): Ao atingir alvo, podem incendiar área ou
+destruir barricadas (em madeira ou tecido).
+2x FLECHAS ENVENENADAS (2 usos/total): DANO +1 e alvo sofre penalidade de
+-2 em testes físicos durante a cena.
+CONJUNTO 14: EXIGE DOMÍNIO DE SOJUTSU
+ARMA YARI DUPLO (uso indeterminado): Causa DANO 2 em alcance médio e pode
+atacar dois oponentes ao mesmo tempo.
+4x LANÇAS CURTAS (4 usos/total): Arremessáveis, causam DANO 2 de alcance
+médio, podem ser usadas para impedir avanço de cavalaria.
+1x GRANADA DE FERRO (1 uso/total): Explosão pequena, causa DANO 2 em área
+curta e derruba inimigos ao alcance.
+Página 30 de 37
+--- NOVA PAGINA ---
+15. ARMAS E DISPOSITIVOS DE PESO 3
+CONJUNTO 15: EXIGE DOMÍNIO DE KENJUTSU
+- NODACHI (uso indeterminado):
+DANO 4, alcance curto e médio (1-2);
+RESISTÊNCIA +2.
+CONJUNTO 16: EXIGE DOMÍNIO DE YARIJUTSU
+- Ô-YARI (Yari Longa de Guerra, uso indeterminado):
+DANO 4, alcance médio (2), pode atingir até 3 inimigos em linha.
+Concede +2d10 para ataque com SOJUTSU/YARIJUTSU
+CONJUNTO 17: EXIGE DOMÍNIO DE KYUJUTSU
+- DAIKYŪ (Arco de Guerra, uso indeterminado):
+DANO 4, alcance longo e compatível com emboscada.
+- FLECHAS PESADAS (4 usos/total):
+Alcance longo, causam DANO +1 contra armaduras ou estruturas leves.
+CONJUNTO 18: EXIGE DOMÍNIO DE YARIJUTSU
+- NAGINATA-Ô (uso indeterminado):
+DANO 4, alcance médio (2), pode atingir até 4 inimigos em linha.
+Concede +2d10 para ataque com YARIJUTSU.
+CONJUNTO 19: EXIGE DOMÍNIO DE ARMAS PESADAS
+- Ō-TATE (Grande Escudo de Torre, uso indeterminado):
+RESISTÊNCIA +3; cobre até 2 aliados próximos.
+- KANABŌ (Clava de Ferro, uso indeterminado):
+DANO 3, Alcance curto; reduz resistência de armadura.
+CONJUNTO 20: EXIGE DOMÍNIO DE SHURIKENJUTSU
+- 9x SHURIKENS FUUMA (9 usos/total/peso dobrado):
+DANO 2 de alcance médio (2), podem ser lançadas uma (dentro do combate); ou
+duas (fora do combate). Compatível com armadilha.
+- 9x DARDOS DE BAMBU (9 usos/total):
+DANO 1 de alcance 4. Compatível com armadilha, com veneno e com emboscada.
+Página 31 de 37
+--- NOVA PAGINA ---
+16. LISTA DE DOMÍNIOS
+16.1. DOMÍNIOS DE FORÇA E FÍSICO
+16.1.1. COMBATE ARMADO
+(Samurai) Kenjutsu: +3 em testes com Katana, Tachi, Wakizashi.
+(Geral) Kyujutsu: Arte do Arco, com foco em ataques de longa distância e
+precisão letal. Recebe +3 em ações que utilizam arco e flecha. É compatível
+com ataque de longa distância.
+(Samurai) Yarijutsu: +3 com Yari (lança), naginata, ou armas de haste.
+(Samurai) Kanabōjutsu: +3 com Kanabō, Tetsubō e outras armas pesadas.
+(Shinobi) Ninkenjutsu: +3 ao usar Ninjaken, espadas curtas e lâminas de
+shinobi.
+16.1.2. COMBATE DESARMADO
+(Shinobi) Taijutsu: +3 em ataque e defesa (causará DANO 1 e
+RESISTÊNCIA +1).
+Jiujitsu: +3 em agarrões, imobilizações e submissões (causará DANO 1).
+Pode neutralizar alvos sem matar. É compatível com Tantô e Wakizashi.
+(Shinobi) Shinobi-Te: +3 para golpes rápidos, evasivos ou furtivos (causará
+DANO 1). É compatível com Emboscada, Ninjaken e Kunai.
+Kyushojutsu: +3 para ataques visando ossos, articulações, pontos de pressão,
+pontos vitais com precisão, podendo atordoar, paralisar ou incapacitar
+temporariamente o alvo (causará 2d10 de penalidade no teste seguinte do
+inimigo).
+(Samurai) Aikijutsu: +3 para redirecionar ataques, aplicar projeções suaves
+ou utilizar a força do oponente contra ele, bloquear, aparar e defender-se de
+ataques armados usando apenas as mãos ou objetos improvisados (concede
+RESISTÊNCIA +1). É compatível com Dō-maru, Kote e etc.
+Soshigen-Kyoshogeki: Estilo de Luta, que recebe resistência e Dano
+recebem +1, para desferir ataques com força bruta (Ataque e Defesa Física),
+quebrar defesas, causar dano a portas, armaduras, muralhas ou inimigos
+protegidos. É compatível com REIKI (concede +1 DANO/RESISTÊNCIA
+por 1 REIKI).
+Página 32 de 37
+--- NOVA PAGINA ---
+16.1.3. APTIDÕES CORPORAIS
+Resiliência e Vigor: +3 para resistir à fadiga, dor, veneno, tortura ou esforços
+prolongados.
+Adaptação: +3 para suportar ambientes extremos de calor ou frio.
+Atletismo e Rapidez: bônus de +3 para atividades que demandam corrida e
+perseguição.
+16.2. DOMÍNIOS DE DESTREZA E ESPECIALIDADES
+16.2.1. FURTIVIDADE
+Furtividade e Infiltração: +3 para mover-se silenciosamente nas sombras,
+arrombamento de portas, janelas, fechaduras.
+Disfarce e Camuflagem: +3 para criar identidades falsas, mesclar-se ao
+ambiente, grupos ou simular hábitos culturais.
+Manipulação de Armadilhas: +3 para instalar, desarmar ou evitar
+armadilhas.
+(Shinobi)Ansatsujutsu: Especialização total em eliminação silenciosa.
+Recebe +3 em todas as rolagens que envolvam assassinato (Emboscada).
+16.2.2. PRESTEZA
+Nittōryūjutsu: +3 ao lutar com duas espadas simultaneamente.
+(Samurai) Battoujutsu: +3 ao sacar, embainhar e golpear em um mesmo
+turno (consome Ação Principal e Secundária), ou sempre que possuir 1 ponto
+de movimento a mais que seus adversários; em situações de precisão
+cerimonial ou de combate.
+(Shinobi) Shurikenjutsu: +3 para lançamento e ocultação de shuriken,
+kunai, dardos, agulhas e outras armas pequenas e rápidas, tanto para ataque,
+emboscada e armadilhas.
+Página 33 de 37
+--- NOVA PAGINA ---
+16.3. DOMÍNIOS DE COGNIÇÃO E ESTRATÉGIA
+16.3.1. TÁTICA
+Estratégia: +3 para identificar vulnerabilidades, detectar aberturas e tomar
+decisões táticas rápidas.
+Percepção Aguçada: +3 para perceber armadilhas, ataques surpresa ou
+antecipar perigos ocultos, notar detalhes escondidos, sons baixos, rastros ou
+pistas ambientais.
+(Shinobi) Mushinjutsu: +3 para observar sem ser notado, captar mensagens
+secretas, decifrar códigos.
+Caçada e Investigação: +3 para rastrear presas, investigar trilhas e buscar
+pistas na natureza.
+Conhecimento Acadêmico: +3 para recordar detalhes históricos, tradições,
+genealogias ou eventos importantes do passado que existam em livros ou
+documentos.
+16.4. DOMÍNIOS DE CARISMA E INFLUÊNCIA
+16.4.1. INFLUÊNCIA
+Liderança: +3 para grupos e aliados, sempre que dar ordens e coordenar
+estratégias em combate.
+Diplomacia: +3 para negociações, mediação de conflitos ou discursos
+persuasivos.
+Manipulação e Enganação: +3 para mentir, enganar, blefar ou manipular
+vontades.
+Intimidação: +3 para coagir, assustar, ou impor respeito por presença ou
+ameaça.
+Beleza e Atração: +3 para seduzir, encantar ou negociar usando charme
+pessoal.
+Página 34 de 37
+--- NOVA PAGINA ---
+16.5. DOMÍNIOS DE ARKHAN E ESPIRITUALIDADE
+16.5.1. MISTICISMO
+Empatia Espiritual: +3 para sentir emoções, intenções ocultas ou
+influências sobrenaturais.
+Rituais Sagrados: +3 para liderar rituais, exorcismos, purificações e
+fortalecer o espírito do grupo.
+Visão Espiritual: +3 para detectar auras, espíritos, magia ou portais ocultos.
+Ilusão Mística: +3 para criar/desfazer ilusões, enganar sentidos ou ocultar
+presenças mágicas.
+Oráculo Cósmico: +3 para pressentir eventos sobrenaturais, interpretar
+profecias ou receber mensagens de entidades.
+Resistência Espiritual: +3 para resistir à corrupção, maldições ou ataques
+espirituais.
+Magia Elemental: +3 para controlar, moldar e manipular elementos naturais
+(apenas um deles: fogo, água, terra, ar) em situações místicas ou cerimoniais.
+Página 35 de 37
+--- NOVA PAGINA ---
+RESUMO - INFORMAÇÕES E MARCADORES DE FICHA
+- PONTOS DE RESISTÊNCIA: Todo personagem tem dois (2) pontos de armamento, e
+recebe +1 para cada 10 pontos de FÍSICO. Funcionam como a resistência e a saúde do
+personagem. Caso a resistência chegue a ZERO, o personagem pode morrer.
+- PONTOS DE ENERGIA: Todo personagem tem um (1) ponto de energia, e recebe +1
+para cada 10 pontos de CARISMA. Reflete a pureza e a empatia espiritual do
+personagem com todas as coisas e com as forças divinas.
+- PONTOS DE DESTINO: Todo personagem tem um (1) ponto, e recebe +1 para cada 10
+pontos de ARKHAN. Esses pontos podem permitir o re-roll em um teste fracassado de
+combate; comprar um sucesso em testes de atributos simples; aumento de dano ou de
+defesa (pós ataque).
+- PONTOS DE ARMAMENTO: Todo personagem tem um (1) ponto de armamento, e
+recebe +1 para cada 10 pontos de FÍSICO. Determina o limite de armas que o
+personagem pode ter.
+ARMAMENTOS, isto é, armas ou armaduras, tem peso mínimo 1 e máximo 3. No caso
+de Itens Utilitários ou Armas Utilitárias, em conjunto podem ter peso 1 (exemplo: 3
+shuriken e duas kunai tem peso 1; ou 9 shurikens tem peso 1; e etc).
+ITENS ou UTILITÁRIOS tem quantidade de uso limitado. Exemplo: Shuriken é uso
+único, Kunai se quebra com três usos; e etc.
+- PONTOS DE MOVIMENTO: Todo personagem tem um (1) ponto de movimento, e
+recebe +1 para cada 10 pontos de DESTREZA. Determina o limite de alcance durante o
+combate e os inimigos que consegue combater. Cada ponto de movimento equivale a 5
+metros de movimento.
+ROLAGEM E TESTES
+Os TESTES DE AÇÃO são sempre 4d10.
+ROLAGENS DE AÇÃO: Valor do Atributo + Domínio (se houver) + Penalidade (se
+houver). Para ter sucesso, o jogador precisa alcançar o valor do atributo (somado ao
+bônus ou subtraído pela penalidade)
+Página 36 de 37
+--- NOVA PAGINA ---
+ROLAGENS DE COMBATE: Valor do Atributo + Domínio (se houver) + 1d10 (+1d10
+para cada 10 pontos havidos no atributo base). Para ter sucesso, o jogador precisa efetuar
+a rolagem mais alta que a de seu adversário (para cada 10 pontos acima da rolagem de
+seu inimigo, ganhará uma vantagem que será chamada de RAISE)
+BÔNUS DE EMBOSCADA: ataque furtivo de curto e médio, que quando bem sucedido
+causa DANO +1. Depende de sucesso em testes de atributo do usuário.
+BÔNUS DE ARMADILHA, preparativo de parafernália para ferir o inimigo imprudente,
+que quando bem sucedido causa DANO +1. Depende de fracasso em testes de atributo do
+inimigo.
+AÇÕES PRINCIPAIS ATAQUE:
+- Combate corpo-a-corpo (testará em Físico)
+- Ataque à distância (testará em Presteza)
+- Intimidação ou distração verbal (testará em Carisma)
+- Percepção Tática ou Estratégia Mística (testará em Cognição)
+AÇÕES PRINCIPAIS DEFENSIVA:
+- Tentar Esquivar (testará em Presteza)
+- Tentar Bloquear (testará em Físico)
+- Ou não Resistir, ser incapaz ou surpreso
+AÇÕES MENORES:
+Reposicionar-se até 3 metros
+Mudar postura (defensiva/ofensiva)
+Grito de alerta
+MEDIDAS E MOVIMENTO
+Cada ponto de movimento equivale a 5 metros de movimento.
+1 DE MOVIMENTO: 5 metros por ação.
+2 DE MOVIMENTO: 10 metros por ação.
+3 DE MOVIMENTO: 15 metros por ação.
+4 DE MOVIMENTO: 20 metros por ação.
+5 DE MOVIMENTO: 25 metros por ação.
+ALCANCE COMUM: de 5 metros.
+ALCANCE MÉDIO: é medido pela COGNIÇÃO (para disparo ou arremesso), ou pela
+PRESTEZA (para movimento). Cada ponto representa 5 metros.
+ALCANCE LONGO: é calculado pelo dobro do valor do alcance médio.
+Página 37 de 37

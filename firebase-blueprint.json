@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string", "enum": ["GM", "PLAYER"] }
+      },
+      "required": ["uid", "email", "displayName", "role"]
+    },
+    "Character": {
+      "title": "Character",
+      "description": "Player character data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email_dono": { "type": "string" },
+        "nome": { "type": "string" },
+        "nivel": { "type": "integer" },
+        "hp_atual": { "type": "integer" },
+        "hp_max": { "type": "integer" }
+      },
+      "required": ["id", "email_dono", "nome", "nivel", "hp_atual", "hp_max"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "Chat message",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "remetente": { "type": "string" },
+        "tipo": { "type": "string", "enum": ["CHAT", "ROLL", "SYSTEM", "WHISPER"] },
+        "conteudo": { "type": "string" }
+      },
+      "required": ["id", "remetente", "tipo", "conteudo"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "UserProfile" },
+      "description": "User profiles"
+    },
+    "/characters/{charId}": {
+      "schema": { "$ref": "Character" },
+      "description": "Player characters"
+    },
+    "/messages/{messageId}": {
+      "schema": { "$ref": "ChatMessage" },
+      "description": "Game chat messages"
+    }
+  }
+}

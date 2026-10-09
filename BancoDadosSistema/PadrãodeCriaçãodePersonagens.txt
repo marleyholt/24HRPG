@@ -1,0 +1,15 @@
+*1.1. Qual continente você escolhe para o seu personagem?*
+*1.2. Se escolheu ABIXYA, em qual cidade/região seu personagem nasceu ou vive?*
+*1.3. Se escolheu GENEXYA, em qual reino seu personagem nasceu ou vive?*
+*2.1. Qual é a raça do seu personagem (de acordo com o continente escolhido)?*
+*3.1. Qual classe você escolhe?*
+*4.1. Qual é o seu Histórico/Background?*
+*5.1. Qual é a sua motivação principal?*
+*6.1. Qual é a sua fraqueza? (Se o atributo fique abaixo de 10 após a distribuição, qual fraqueza obrigatória daquele atributo você assume?)*
+*7.1. Como você distribui seus 60 pontos iniciais nos Atributos Base?*
+(Regra: O mínimo distribuído é 4. Caso sua raça tenha penalidade de -6, você deve alocar pelo menos 10 pontos base no atributo afetado para garantir o valor final mínimo de 4).
+   * Força: ____
+   * Destreza: ____
+   * Cognição: ____
+   * Carisma: ____
+   * (Primórdio inicia automaticamente em 10 pontos no Nível 0).
