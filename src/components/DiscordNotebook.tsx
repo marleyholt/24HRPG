@@ -30,8 +30,8 @@ import { parseAndRollDice, extractDiceRollsFromMessage } from '../utils/diceRoll
 import { getApiUrl } from '../utils/apiConfig';
 import { saveChannelReadTime, getChannelReadTimes } from '../utils/discordUnreadTracker';
 
-// Discord Free tier message character limit
-const DISCORD_FREE_MAX_CHARS = 2000;
+// Discord Free tier message character limit (increased to allow longer narratives)
+const DISCORD_FREE_MAX_CHARS = 1000000;
 
 // Canais pré-fixados oficiais do Módulo 2: Narração
 export const FIXED_NARRACAO_CHANNELS: DiscordChannelItem[] = [
@@ -1134,7 +1134,11 @@ export function DiscordNotebook({
 
   // Funções do Narrador IA
   const askNarratorAi = async () => {
-    if (!inputText.trim() || !activeChannel) return;
+    console.log("askNarratorAi chamado!", { inputText, activeChannel });
+    if (!inputText.trim() || !activeChannel) {
+      console.log("askNarratorAi retornou cedo", { inputText, activeChannel });
+      return;
+    }
     setIsAskingAi(true);
     try {
       const response = await fetch(getApiUrl('/api/ai/narrator'), {
@@ -3046,6 +3050,14 @@ export function DiscordNotebook({
                 >
                   <X className="h-4 w-4" />
                 </button>
+              </div>
+            )}
+
+            {/* Narrator Loading Indicator */}
+            {isAskingAi && (
+              <div className="mb-2 bg-indigo-950/40 p-2 rounded-lg border border-indigo-500/30 flex items-center gap-2">
+                <RefreshCw className="h-4 w-4 text-indigo-400 animate-spin" />
+                <span className="text-xs text-indigo-200 font-medium">O narrador está elaborando a próxima narrativa...</span>
               </div>
             )}
 

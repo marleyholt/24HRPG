@@ -63,7 +63,7 @@ async function startServer() {
       const { parseNarratorResponse } = await import("./src/utils/narratorLogic");
 
       const ai = new GoogleGenAI({ apiKey });
-      const model = ai.models.getGenerativeModel({ model: "gemini-2.5-flash" });
+      const model = ai.models.getGenerativeModel({ model: "gemini-1.5-flash" });
 
       const history = [
         { role: "user", parts: [{ text: NARRATOR_SYSTEM_PROMPT }] },
