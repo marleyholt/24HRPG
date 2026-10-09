@@ -1133,28 +1133,20 @@ export function DiscordNotebook({
   };
 
   // Funções do Narrador IA
-  const askNarratorAi = async (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
-    console.log("Button clicked!");
-    if (!inputText.trim() || !activeChannel) {
-      console.log("askNarratorAi retornou cedo", { inputText, activeChannel });
-      return;
-    }
+  const askNarratorAi = async (prompt: string, context: any[]) => {
     setIsAskingAi(true);
     try {
       const response = await fetch(getApiUrl('/api/ai/narrator'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          channelId: activeChannel.id,
-          prompt: inputText,
-          context: messages.slice(-10)
+          channelId: activeChannel?.id,
+          prompt,
+          context
         })
       });
       const data = await response.json();
-      if (data.success) {
-        setInputText('');
-      } else {
+      if (!data.success) {
         throw new Error(data.error);
       }
     } catch (err: any) {
@@ -1359,6 +1351,12 @@ export function DiscordNotebook({
 
       const docRef = await addDoc(collection(db, 'discord_notebook_messages'), messagePayload);
       trackWrite('discord_notebook_messages', 1);
+      // DISPARO AUTOMÁTICO DO NARRADOR IA
+      const isNarrativeChannel = activeChannel?.id === '1-narrativas' || (activeChannel?.name && activeChannel.name.toLowerCase().includes('narrativas'));
+      if (isNarrativeChannel) {
+        askNarratorAi(finalContent, messages.slice(-10));
+      }
+
       logEvent('success', `Mensagem gravada no Firestore com sucesso!`, {
         docId: docRef.id,
         canal: activeChannel?.name,
@@ -2564,6 +2562,11 @@ export function DiscordNotebook({
                 </div>
               )}
 
+              {isAskingAi && (
+                <div className="text-sm text-gray-500 italic p-2 animate-pulse">
+                  O narrador está elaborando a próxima narrativa...
+                </div>
+              )}
               {filteredMessages.map((msg, idx) => {
                 const isBot = msg.authorName.includes('[Discord]') || msg.authorName.includes('BOT') || msg.isFromDiscord;
                 const authorUser = allUsers?.find(u => u.email && msg.authorEmail && u.email.toLowerCase().trim() === msg.authorEmail.toLowerCase().trim());

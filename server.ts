@@ -62,8 +62,14 @@ async function startServer() {
       const { NARRATOR_SYSTEM_PROMPT } = await import("./src/utils/narratorPrompt");
       const { parseNarratorResponse } = await import("./src/utils/narratorLogic");
 
-      const ai = new GoogleGenAI({ apiKey });
-      const model = ai.models.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const ai = new GoogleGenAI({ 
+        apiKey,
+        httpOptions: {
+          headers: {
+            'User-Agent': 'aistudio-build',
+          }
+        }
+      });
 
       const history = [
         { role: "user", parts: [{ text: NARRATOR_SYSTEM_PROMPT }] },
@@ -74,7 +80,8 @@ async function startServer() {
         }))
       ];
 
-      const result = await model.generateContent({
+      const result = await ai.models.generateContent({
+        model: "gemini-3.8-flash",
         contents: [...history, { role: "user", parts: [{ text: prompt }] }],
         config: {
           responseMimeType: "application/json",
@@ -244,16 +251,16 @@ Observações importantes:
       let response: any;
       try {
         response = await ai.models.generateContent({
-          model: "gemini-2.5-pro",
+          model: "gemini-3.8-flash",
           contents: contentsParts,
           config: {
             responseMimeType: "application/json",
           }
         });
       } catch (geminiErr: any) {
-        console.warn("Tentando fallback para gemini-3.7-flash devido a:", geminiErr?.message);
+        console.warn("Tentando fallback para gemini-3.8-flash devido a:", geminiErr?.message);
         response = await ai.models.generateContent({
-          model: "gemini-2.5-flash",
+          model: "gemini-3.8-flash",
           contents: contentsParts,
           config: {
             responseMimeType: "application/json",
