@@ -33,7 +33,8 @@ const getFirebaseConfig = () => {
 
 async function startServer() {
   const app = express();
-  app.use(cors());
+  app.use(cors({ origin: true, credentials: true }));
+  app.options("*", cors({ origin: true, credentials: true }));
   const PORT = Number(process.env.PORT) || 3000;
 
   // Accept larger payloads for base64 PDF and image uploads
@@ -52,7 +53,7 @@ async function startServer() {
   // Rota para processar interações com o Narrador IA
   app.post("/api/ai/narrator", async (req, res) => {
     try {
-      const { channelId, prompt, context } = req.body;
+      const { channelId, prompt, context, characters, activeCharacter } = req.body;
       const apiKeys = [process.env.GEMINI_API_KEY2, process.env.GEMINI_API_KEY].filter(Boolean) as string[];
 
       if (apiKeys.length === 0) {
@@ -62,10 +63,24 @@ async function startServer() {
       const { NARRATOR_SYSTEM_PROMPT } = await import("./src/utils/narratorPrompt");
       const { parseNarratorResponse } = await import("./src/utils/narratorLogic");
 
+      // Monta o dossiê com as fichas dos jogadores presentes na campanha
+      let charactersContext = "";
+      if (Array.isArray(characters) && characters.length > 0) {
+        charactersContext = "\n\n[DOSSIÊ DE FICHAS DOS JOGADORES DA CAMPANHA]\n" + characters.map((c: any) => {
+          const isCurrent = activeCharacter && (activeCharacter.id === c.id || activeCharacter.nome === c.nome);
+          return `• ${isCurrent ? '★ [HERÓI ATIVO INTERAGINDO] ' : ''}Nome: ${c.nome} | Nível: ${c.nivel ?? 0} | Posição Social: ${c.posicao_social || 'Sem título'} | Ocupação: ${c.ocupacao || 'Nenhuma'} | Clã: ${c.cla || 'Nenhum'} | Cidadania: ${c.cidadania || 'Nenhuma'}
+  Atributos: Físico: ${c.atributos?.fisico ?? 0} | Destreza: ${c.atributos?.destreza ?? 0} | Cognição: ${c.atributos?.cognicao ?? 0} | Carisma: ${c.atributos?.carisma ?? 0} | Primórdio: ${c.atributos?.primordio ?? 0}
+  Recursos: HP: ${c.recursos?.hp || 'Cheio'} | Éter: ${c.recursos?.ether || 'Cheio'} | Destino: ${c.recursos?.destino || 'Cheio'}
+  ${c.descricao ? `Lore/Biografia: "${c.descricao}"` : ''}`;
+        }).join("\n\n");
+      }
+
+      const systemPromptWithRoster = NARRATOR_SYSTEM_PROMPT + charactersContext;
+
       const history = [
-        { role: "user", parts: [{ text: NARRATOR_SYSTEM_PROMPT }] },
+        { role: "user", parts: [{ text: systemPromptWithRoster }] },
         { role: "model", parts: [{ text: JSON.stringify({
-          narrativa: "Entendido. Sou o Mestre de Jogo e Narrador Tático de Telumak RPG. Conduzirei as ações com prosa visceral e cálculos táticos, respondendo sempre em JSON estruturado.",
+          narrativa: "Entendido. Li com atenção as fichas dos jogadores, seus níveis e posições sociais. Conduzirei a narrativa respeitando a magnitude e a escala de perigo condizente a cada um, respondendo sempre em JSON estruturado.",
           dados_tecnicos: { rolagens: [], status_atualizados: {}, solicitacao_rolagem: null }
         }) }] },
         ...(context || []).map((m: any) => ({

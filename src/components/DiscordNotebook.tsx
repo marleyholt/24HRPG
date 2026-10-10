@@ -1155,6 +1155,36 @@ export function DiscordNotebook({
       content: typeof m.content === 'string' ? m.content : ''
     }));
 
+    // Dossiê das fichas dos personagens para calibrar desafios por nível
+    const charactersSummary = (characters || []).map(c => ({
+      id: c.id,
+      nome: c.nome,
+      cla: c.cla || '',
+      ocupacao: c.ocupacao || '',
+      posicao_social: c.posicao_social || '',
+      cidadania: c.cidadania || '',
+      seguimento: c.seguimento || '',
+      nivel: c.nivel ?? 0,
+      atributos: {
+        fisico: c.fisico ?? 0,
+        destreza: c.destreza ?? 0,
+        cognicao: c.cognicao ?? 0,
+        carisma: c.carisma ?? 0,
+        primordio: c.primordio ?? 0
+      },
+      recursos: {
+        hp: `${c.hp_atual ?? 0}/${c.hp_max ?? 0}`,
+        ether: `${c.ether_atual ?? 0}/${c.ether_max ?? 0}`,
+        destino: `${c.destino_atual ?? 0}/${c.destino_max ?? 0}`
+      },
+      descricao: c.descricao || ''
+    }));
+
+    const activeUserChar = characters?.find(c => 
+      c.email_dono && currentUserProfile?.email && 
+      c.email_dono.toLowerCase().trim() === currentUserProfile.email.toLowerCase().trim()
+    ) || characters?.[0] || null;
+
     setIsAskingAi(true);
     try {
       const response = await fetch(getApiUrl('/api/ai/narrator'), {
@@ -1163,7 +1193,9 @@ export function DiscordNotebook({
         body: JSON.stringify({
           channelId: activeChannel?.id || '1-narrativa',
           prompt: safePrompt,
-          context: contextMessages
+          context: contextMessages,
+          characters: charactersSummary,
+          activeCharacter: activeUserChar
         })
       });
 
