@@ -39,7 +39,9 @@ import { CampaignSummaryTab } from './components/CampaignSummaryTab';
 import { trackRead, trackWrite, trackDelete, initGlobalTelemetrySync, subscribeToUsageStats, FirebaseUsageStats, isBlazePlanActive } from './utils/firebaseUsageTracker';
 import { 
   saveCharactersToCache, 
-  loadCharactersFromCache 
+  loadCharactersFromCache,
+  loadDiscordChannelsFromCache,
+  saveDiscordChannelsToCache
 } from './utils/browserCache';
 import { 
   isOfflineModeActive, 
@@ -93,11 +95,11 @@ export default function App() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [versionsMap, setVersionsMap] = useState<{ [charId: string]: CharVersion[] }>({});
 
-  // Discord Unread Tracking State (Hydrated from local cache first for 0ms startup)
+  // Discord Unread Tracking State (Hydrated from local cache first for 0ms startup with timestamp validation)
   const [discordChannels, setDiscordChannels] = useState<DiscordChannelMeta[]>(() => {
     try {
-      const saved = localStorage.getItem('telumak_cached_discord_channels');
-      return saved ? JSON.parse(saved) : [];
+      const cached = loadDiscordChannelsFromCache<DiscordChannelMeta>();
+      return cached && cached.channels && cached.channels.length > 0 ? cached.channels : [];
     } catch {
       return [];
     }
@@ -686,9 +688,7 @@ export default function App() {
       });
       list.sort((a: any, b: any) => (a.order ?? 999) - (b.order ?? 999));
       setDiscordChannels(list);
-      try {
-        localStorage.setItem('telumak_cached_discord_channels', JSON.stringify(list));
-      } catch {}
+      saveDiscordChannelsToCache(list);
     }, (err) => {
       console.warn("Discord channels snapshot error:", err);
     });

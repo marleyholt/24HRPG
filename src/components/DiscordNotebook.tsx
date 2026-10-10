@@ -29,6 +29,7 @@ import { trackRead, trackWrite, trackDelete } from '../utils/firebaseUsageTracke
 import { parseAndRollDice, extractDiceRollsFromMessage } from '../utils/diceRoller';
 import { getApiUrl } from '../utils/apiConfig';
 import { saveChannelReadTime, getChannelReadTimes } from '../utils/discordUnreadTracker';
+import { saveDiscordChannelsToCache, loadDiscordChannelsFromCache } from '../utils/browserCache';
 
 // Discord Free tier message character limit (increased to allow longer narratives)
 const DISCORD_FREE_MAX_CHARS = 1000000;
@@ -83,11 +84,11 @@ export function DiscordNotebook({
   sharedRecentMessages, 
   onAddLog 
 }: DiscordNotebookProps) {
-  // Channels stored in Firestore (real channels created by GM with local storage cache fallback)
+  // Channels stored in Firestore (real channels created by GM with local storage cache fallback + timestamp check)
   const [internalDbChannels, setInternalDbChannels] = useState<DiscordChannelItem[]>(() => {
     try {
-      const saved = localStorage.getItem('telumak_cached_discord_channels');
-      return saved ? JSON.parse(saved) : [];
+      const cached = loadDiscordChannelsFromCache<DiscordChannelItem>();
+      return cached && cached.channels && cached.channels.length > 0 ? cached.channels : [];
     } catch {
       return [];
     }
@@ -632,9 +633,7 @@ export function DiscordNotebook({
       });
 
       setInternalDbChannels(items);
-      try {
-        localStorage.setItem('telumak_cached_discord_channels', JSON.stringify(items));
-      } catch {}
+      saveDiscordChannelsToCache(items);
     }, (err) => {
       console.warn("Snapshot discord_channels:", err);
       setInternalDbChannels(FIXED_NARRACAO_CHANNELS);
