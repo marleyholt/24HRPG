@@ -65,12 +65,12 @@ FORMATO DE SA\xCDDA (Obrigat\xF3rio em JSON):
 PADR\xD5ES DE RESPOSTA E FORMATO:
 
 0. PADR\xD5ES:
-- Na primeira intera\xE7\xE3o do jogador, solicitar uma breve descri\xE7\xE3o do seu personagem, definindo alinhamento e palavras chave para defini-lo, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar lista de defeitos e virtudes o objetivo \xE9 criar um background de roleplay para o personagem com um alinhamento de a\xE7\xF5es:
-- Todos os NPCs criados por voc\xEA, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar
 - Falas devem ser escritas nessa estrutura: 
     > *\u2014 [fala]* \u2014 [narrativa] \u2014 *[fala]*.
 - Os titulos maiores, devem ser precedidos de #
 - Os titulos menores, devem ser precedidos de ##
+- Na primeira intera\xE7\xE3o do jogador, solicitar uma breve descri\xE7\xE3o do seu personagem, definindo alinhamento e palavras chave para defini-lo, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar lista de defeitos e virtudes o objetivo \xE9 criar um background de roleplay para o personagem com um alinhamento de a\xE7\xF5es:
+- Todos os NPCs criados por voc\xEA, devem escolher 4 virtudes e 4 defeitos para nortear a o roleplay e facilitar sua forma de narrar
 Letra	Virtudes (Qualidades)	Defeitos
 A	Altru\xEDsta, Am\xE1vel, Atencioso, Aut\xEAntico	Arrogante, Ap\xE1tico, Avarento, Antip\xE1tico
 B	Benevolente, Bondoso, Bem-humorado	Belicoso (briguento), Banal, Biromba
@@ -111,6 +111,16 @@ Z	Zeloso, Zelador	Zombeteiro, Turvo (sem clareza)
 3. Estrutura de Resumo T\xE1tico (dentro do campo 'narrativa'):
 - Sempre que houver conclus\xE3o de conflitos, passagens de fase ou alinhamentos estrat\xE9gicos importantes, forne\xE7a um bloco final formatado em t\xF3picos claros (RESUMO T\xC1TICO / RESUMO).
 - Detalhe de forma objetiva: status num\xE9ricos atualizados, posi\xE7\xF5es das equipes, baixas inimigas, recursos utilizados e os pr\xF3ximos marcos operacionais.
+
+4. Leitura Obrigat\xF3ria de Ficha e Escalonamento por N\xEDvel:
+- Voc\xEA TEM acesso ao dossi\xEA de fichas dos personagens da sess\xE3o e aos seus atributos.
+- Analise minuciosamente o N\xCDVEL, OCUPA\xC7\xC3O, POSI\xC7\xC3O SOCIAL, CL\xC3 e ATRIBUTOS do personagem antes de narrar.
+- As circunst\xE2ncias, a atmosfera e a recep\xE7\xE3o do mundo DEVEM ser estritamente proporcionais ao N\xEDvel e Posi\xE7\xE3o Social:
+    * N\xEDvel 0 / Recruta / Aprendiz: O personagem est\xE1 no in\xEDcio absoluto. Um n\xEDvel zero n\xE3o pode ser tratado como um soberano divino; coloque-o como um novato em um campo de alistamento do ex\xE9rcito, um recruta em sua primeira guarda, um aprendiz ou algu\xE9m sem renome lutando pela pr\xF3pria sobreviv\xEAncia sob ordens de comandantes r\xEDgidos.
+    * N\xEDvel 1 a 4 / Combatente / Aventureiro: Possui treinamento b\xE1sico ou reputa\xE7\xE3o inicial em sua vila ou guilda.
+    * N\xEDvel 5 a 8 / Campe\xE3o / Comandante de Batalh\xE3o: Lidera esquadr\xF5es, possui respeito de generais e poder marcial destrutivo.
+    * N\xEDvel 9+ / Deus-Rei / Soberano Tit\xE2nico: Carrega presen\xE7a milenar e aterradora, comanda legi\xF5es inteiras e enfrenta horrores de escala divina.
+- Caso o jogador tente a\xE7\xF5es imposs\xEDveis para seu n\xEDvel atual, imponha as consequ\xEAncias f\xEDsicas, sociais e mec\xE2nicas com brutalidade e realismo visceral.
 
 Idioma de opera\xE7\xE3o obrigat\xF3rio: Portugu\xEAs brasileiro.
 `;
@@ -153,24 +163,36 @@ var import_vite = require("vite");
 var import_genai = require("@google/genai");
 async function startServer() {
   const app = (0, import_express.default)();
-  app.use((0, import_cors.default)());
+  app.use((0, import_cors.default)({ origin: true, credentials: true }));
+  app.options("*", (0, import_cors.default)({ origin: true, credentials: true }));
   const PORT = Number(process.env.PORT) || 3e3;
   app.use(import_express.default.json({ limit: "50mb" }));
   app.use(import_express.default.urlencoded({ extended: true, limit: "50mb" }));
   app.use(import_express.default.static(import_path.default.join(process.cwd(), "public")));
   app.post("/api/ai/narrator", async (req, res) => {
     try {
-      const { channelId, prompt, context } = req.body;
+      const { channelId, prompt, context, characters, activeCharacter } = req.body;
       const apiKeys = [process.env.GEMINI_API_KEY2, process.env.GEMINI_API_KEY].filter(Boolean);
       if (apiKeys.length === 0) {
         return res.status(500).json({ error: "Nenhuma chave GEMINI_API_KEY ou GEMINI_API_KEY2 configurada." });
       }
       const { NARRATOR_SYSTEM_PROMPT: NARRATOR_SYSTEM_PROMPT2 } = await Promise.resolve().then(() => (init_narratorPrompt(), narratorPrompt_exports));
       const { parseNarratorResponse: parseNarratorResponse2 } = await Promise.resolve().then(() => (init_narratorLogic(), narratorLogic_exports));
+      let charactersContext = "";
+      if (Array.isArray(characters) && characters.length > 0) {
+        charactersContext = "\n\n[DOSSI\xCA DE FICHAS DOS JOGADORES DA CAMPANHA]\n" + characters.map((c) => {
+          const isCurrent = activeCharacter && (activeCharacter.id === c.id || activeCharacter.nome === c.nome);
+          return `\u2022 ${isCurrent ? "\u2605 [HER\xD3I ATIVO INTERAGINDO] " : ""}Nome: ${c.nome} | N\xEDvel: ${c.nivel ?? 0} | Posi\xE7\xE3o Social: ${c.posicao_social || "Sem t\xEDtulo"} | Ocupa\xE7\xE3o: ${c.ocupacao || "Nenhuma"} | Cl\xE3: ${c.cla || "Nenhum"} | Cidadania: ${c.cidadania || "Nenhuma"}
+  Atributos: F\xEDsico: ${c.atributos?.fisico ?? 0} | Destreza: ${c.atributos?.destreza ?? 0} | Cogni\xE7\xE3o: ${c.atributos?.cognicao ?? 0} | Carisma: ${c.atributos?.carisma ?? 0} | Prim\xF3rdio: ${c.atributos?.primordio ?? 0}
+  Recursos: HP: ${c.recursos?.hp || "Cheio"} | \xC9ter: ${c.recursos?.ether || "Cheio"} | Destino: ${c.recursos?.destino || "Cheio"}
+  ${c.descricao ? `Lore/Biografia: "${c.descricao}"` : ""}`;
+        }).join("\n\n");
+      }
+      const systemPromptWithRoster = NARRATOR_SYSTEM_PROMPT2 + charactersContext;
       const history = [
-        { role: "user", parts: [{ text: NARRATOR_SYSTEM_PROMPT2 }] },
+        { role: "user", parts: [{ text: systemPromptWithRoster }] },
         { role: "model", parts: [{ text: JSON.stringify({
-          narrativa: "Entendido. Sou o Mestre de Jogo e Narrador T\xE1tico de Telumak RPG. Conduzirei as a\xE7\xF5es com prosa visceral e c\xE1lculos t\xE1ticos, respondendo sempre em JSON estruturado.",
+          narrativa: "Entendido. Li com aten\xE7\xE3o as fichas dos jogadores, seus n\xEDveis e posi\xE7\xF5es sociais. Conduzirei a narrativa respeitando a magnitude e a escala de perigo condizente a cada um, respondendo sempre em JSON estruturado.",
           dados_tecnicos: { rolagens: [], status_atualizados: {}, solicitacao_rolagem: null }
         }) }] },
         ...(context || []).map((m) => ({
