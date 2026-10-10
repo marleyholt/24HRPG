@@ -114,6 +114,8 @@ async function startServer() {
               contents: [...history, { role: "user", parts: [{ text: cleanPrompt }] }],
               config: {
                 responseMimeType: "application/json",
+                maxOutputTokens: 4096,
+                temperature: 0.75,
               }
             });
             responseText = result.text || "{}";

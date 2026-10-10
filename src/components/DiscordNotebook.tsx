@@ -1211,6 +1211,20 @@ export function DiscordNotebook({
       // 1. Gravar a Narrativa no canal 1-narrativa (ou canal ativo de narração)
       const narrativeChannelId = activeChannel?.id || '1-narrativa';
       const narrativeChannelName = activeChannel?.name || '1 Narrativa';
+
+      // Higienização de garantia: extrai a narrativa pura caso algum delimitador JSON tenha sobrado
+      let cleanContent = typeof data.narrativa === 'string' ? data.narrativa : JSON.stringify(data.narrativa);
+      if (cleanContent.trim().startsWith('{') && cleanContent.includes('"narrativa"')) {
+        const match = cleanContent.match(/"narrativa"\s*:\s*"((?:[^"\\]|\\.)*)"/s);
+        if (match && match[1]) {
+          try {
+            cleanContent = JSON.parse('"' + match[1] + '"');
+          } catch {
+            cleanContent = match[1].replace(/\\n/g, '\n').replace(/\\"/g, '"');
+          }
+        }
+      }
+
       await addDoc(collection(db, 'discord_notebook_messages'), {
         channelId: narrativeChannelId,
         discordTargetId: null,
@@ -1218,7 +1232,7 @@ export function DiscordNotebook({
         authorName: 'Narrador (IA)',
         authorAvatar: 'https://cdn-icons-png.flaticon.com/512/3408/3408591.png',
         authorEmail: 'narrador-ia@telumak.rpg',
-        content: data.narrativa,
+        content: cleanContent,
         isFromDiscord: false,
         discordSynced: false,
         syncingToDiscord: false,
@@ -1766,31 +1780,90 @@ export function DiscordNotebook({
   // Render Markdown
   const renderDiscordMarkdown = (text: string, msgId: string) => {
     if (!text) return null;
-    const lines = text.split('\n');
+
+    // Higienização defensiva retroativa: caso a mensagem tenha sido salva contendo o JSON inteiro bruto
+    let displayContent = text;
+    if (typeof displayContent === 'string' && displayContent.trim().startsWith('{') && displayContent.includes('"narrativa"')) {
+      const match = displayContent.match(/"narrativa"\s*:\s*"((?:[^"\\]|\\.)*)"/s);
+      if (match && match[1]) {
+        try {
+          displayContent = JSON.parse('"' + match[1] + '"');
+        } catch {
+          displayContent = match[1].replace(/\\n/g, '\n').replace(/\\"/g, '"');
+        }
+      }
+    }
+
+    const lines = displayContent.split('\n');
     return lines.map((line, lineIdx) => {
+      const trimmed = line.trim();
+
+      // Linha vazia
+      if (!trimmed) {
+        return <div key={lineIdx} className="h-2" />;
+      }
+
+      // H3 (### Título ou ### RESUMO TÁTICO)
+      if (line.startsWith('### ')) {
+        const titleContent = line.substring(4);
+        const isTactical = titleContent.toLowerCase().includes('resumo tático') || titleContent.toLowerCase().includes('resumo');
+        return (
+          <h3 
+            key={lineIdx} 
+            className={`text-xs font-black tracking-wider uppercase my-2 py-1 px-2 rounded flex items-center gap-1.5 border ${
+              isTactical 
+                ? 'bg-amber-500/10 text-amber-300 border-amber-500/30' 
+                : 'bg-white/5 text-sky-300 border-white/10'
+            }`}
+          >
+            {isTactical && <span>🛡️</span>}
+            {parseInlineMarkdown(titleContent, msgId, lineIdx)}
+          </h3>
+        );
+      }
+
+      // H1 (# Título)
       if (line.startsWith('# ')) {
-        return <h1 key={lineIdx} className="text-lg font-black text-white my-1 border-b border-white/10 pb-0.5">{parseInlineMarkdown(line.substring(2), msgId, lineIdx)}</h1>;
+        return (
+          <h1 key={lineIdx} className="text-base sm:text-lg font-black text-white my-2 border-b border-white/15 pb-1">
+            {parseInlineMarkdown(line.substring(2), msgId, lineIdx)}
+          </h1>
+        );
       }
+
+      // H2 (## Título)
       if (line.startsWith('## ')) {
-        return <h2 key={lineIdx} className="text-base font-bold text-white my-1">{parseInlineMarkdown(line.substring(3), msgId, lineIdx)}</h2>;
+        return (
+          <h2 key={lineIdx} className="text-sm sm:text-base font-bold text-sky-200 my-1.5">
+            {parseInlineMarkdown(line.substring(3), msgId, lineIdx)}
+          </h2>
+        );
       }
+
+      // Citação em bloco / Fala estilizada (> Fala)
       if (line.startsWith('> ')) {
         return (
-          <div key={lineIdx} className="border-l-4 border-[#4e5058] bg-[#2b2d31]/60 pl-3 py-1 my-1 text-[#dbdee1] font-sans text-xs">
+          <div key={lineIdx} className="border-l-4 border-indigo-500 bg-indigo-950/20 pl-3 py-1.5 my-1 text-indigo-100 font-serif italic text-xs rounded-r">
             {parseInlineMarkdown(line.substring(2), msgId, lineIdx)}
           </div>
         );
       }
-      if (line.startsWith('- ') || line.startsWith('* ')) {
+
+      // Lista com marcadores (- , * ou •)
+      if (line.startsWith('- ') || line.startsWith('* ') || line.startsWith('• ') || trimmed.startsWith('•')) {
+        const content = line.startsWith('- ') || line.startsWith('* ') || line.startsWith('• ')
+          ? line.substring(2)
+          : trimmed.replace(/^•\s*/, '');
         return (
-          <div key={lineIdx} className="flex items-start gap-2 ml-2 my-0.5">
-            <span className="text-[#949ba4] font-bold">•</span>
-            <span>{parseInlineMarkdown(line.substring(2), msgId, lineIdx)}</span>
+          <div key={lineIdx} className="flex items-start gap-2 ml-2 my-1 text-xs">
+            <span className="text-indigo-400 font-bold leading-normal shrink-0">◆</span>
+            <span className="leading-relaxed text-[#dbdee1]">{parseInlineMarkdown(content, msgId, lineIdx)}</span>
           </div>
         );
       }
+
       return (
-        <p key={lineIdx} className="min-h-[1.2em] leading-relaxed">
+        <p key={lineIdx} className="min-h-[1.2em] leading-relaxed my-0.5">
           {parseInlineMarkdown(line, msgId, lineIdx)}
         </p>
       );
